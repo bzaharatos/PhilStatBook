@@ -2,7 +2,6 @@ project:
   type: book
   resources:
     - figures/**
-    - BookCoverFull.png
   output-dir: _site
 
 book:
