@@ -8,7 +8,6 @@ book:
   title: "Patterns from Static: Philosophy and the Question Concerning Statistics"
   chapters:
     - index.qmd
-    - preface.qmd
     - ch1.qmd
     - ch2.qmd
   cover-image: BookCoverFull.png
