@@ -1,0 +1,124 @@
+/* Epigraph/chapter quote */
+.chapquote {
+  margin: 1.5rem 0 2rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid rgba(0,0,0,0.15);
+  font-style: italic;
+}
+
+.chapquote blockquote {
+  margin: 0;
+}
+
+.chapquote .attribution {
+  margin-top: 0.5rem;
+  text-align: right;
+  font-style: normal;
+}
+
+
+/* ===== Robust definition-list layout: same-line label + text ===== */
+
+/* Reset common dl defaults inside argument blocks */
+.argument dl,
+.argument dt,
+.argument dd,
+.argument p {
+  margin: 0 !important;
+}
+
+/* OUTER dl: "Argument #1" label column */
+.argument > dl > dt {
+  display: inline-block !important;
+  width: 10rem;                 /* left margin label width */
+  font-weight: 700;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.argument > dl > dd {
+  display: inline !important;   /* keep on same line as dt */
+  vertical-align: top;
+}
+
+/* Force the outer dd content to stay inline (Pandoc often wraps in <p>) */
+.argument > dl > dd > p {
+  display: inline !important;
+}
+
+/* After each outer dd, break to next line (so next dt starts on new line) */
+.argument > dl > dd::after {
+  content: "";
+  display: block;
+  height: 0.35rem;              /* row gap */
+}
+
+/* INNER dl: P1/P2/C label column */
+.argument > dl > dd > dl > dt {
+  display: inline-block !important;
+  width: 3.5rem;                /* width for P1/P2/C */
+  font-weight: 700;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.argument > dl > dd > dl > dd {
+  display: inline !important;   /* keep on same line as dt */
+  vertical-align: top;
+}
+
+/* Inner dd text: keep inline even if wrapped in <p> */
+.argument > dl > dd > dl > dd > p {
+  display: inline !important;
+}
+
+/* Break between P-items */
+.argument > dl > dd > dl > dd::after {
+  content: "";
+  display: block;
+  height: 0.25rem;
+}
+/* Definition lists everywhere in the rendered page content */
+:where(.content, .page-columns, .page-full, .column-body, .column-margin, main) dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.75em;
+  row-gap: 0.35em;
+  margin-left: 0;
+}
+
+:where(.content, .page-columns, .page-full, .column-body, .column-margin, main) dl > dt,
+:where(.content, .page-columns, .page-full, .column-body, .column-margin, main) dl > dd {
+  margin: 0;
+}
+
+:where(.content, .page-columns, .page-full, .column-body, .column-margin, main) dl > dd > p {
+  margin: 0;
+}
+/* Make definition lists (incl. LaTeX description env) render inline: term + text on same line */
+main dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.6rem;
+  row-gap: 0.25rem;
+}
+
+main dl > dt {
+  grid-column: 1;
+  margin: 0;
+}
+
+main dl > dd {
+  grid-column: 2;
+  margin: 0;
+}
+
+/* Pandoc often wraps dd content in <p>; kill the top/bottom margins so it doesn't drop */
+main dl > dd > p {
+  margin: 0;
+}
+
+/* If a dd has multiple paragraphs, keep spacing sane */
+main dl > dd > p + p {
+  margin-top: 0.5rem;
+}

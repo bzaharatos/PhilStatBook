@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Philosophy, statistics, and the philosophy of statistics – Patterns from Static: Philosophy and the Question Concerning Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch2.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-99913b7803b80b0c1d2b970a25816663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Philosophy, statistics, and the philosophy of statistics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Patterns from Static: Philosophy and the Question Concerning Statistics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Philosophy, statistics, and the philosophy of statistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Contextualizing statistics</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-philosophy" id="toc-what-is-philosophy" class="nav-link active" data-scroll-target="#what-is-philosophy"><span class="header-section-number">1.1</span> What is philosophy?</a>
+  <ul class="collapse">
+  <li><a href="#a-historical-approach" id="toc-a-historical-approach" class="nav-link" data-scroll-target="#a-historical-approach"><span class="header-section-number">1.1.1</span> A historical approach</a></li>
+  <li><a href="#core-subdisciplines-of-philosophy" id="toc-core-subdisciplines-of-philosophy" class="nav-link" data-scroll-target="#core-subdisciplines-of-philosophy"><span class="header-section-number">1.1.2</span> Core subdisciplines of philosophy</a></li>
+  </ul></li>
+  <li><a href="#what-is-statistics" id="toc-what-is-statistics" class="nav-link" data-scroll-target="#what-is-statistics"><span class="header-section-number">1.2</span> What is statistics?</a>
+  <ul class="collapse">
+  <li><a href="#a-very-short-and-general-primer-on-statistical-inference" id="toc-a-very-short-and-general-primer-on-statistical-inference" class="nav-link" data-scroll-target="#a-very-short-and-general-primer-on-statistical-inference"><span class="header-section-number">1.2.1</span> A very short and general primer on statistical inference</a></li>
+  <li><a href="#pillars-of-statistical-wisdom" id="toc-pillars-of-statistical-wisdom" class="nav-link" data-scroll-target="#pillars-of-statistical-wisdom"><span class="header-section-number">1.2.2</span> Pillars of statistical wisdom</a></li>
+  </ul></li>
+  <li><a href="#what-is-the-philosophy-of-statistics" id="toc-what-is-the-philosophy-of-statistics" class="nav-link" data-scroll-target="#what-is-the-philosophy-of-statistics"><span class="header-section-number">1.3</span> What is the philosophy of statistics?</a>
+  <ul class="collapse">
+  <li><a href="#philosophy-in-statistics" id="toc-philosophy-in-statistics" class="nav-link" data-scroll-target="#philosophy-in-statistics"><span class="header-section-number">1.3.1</span> Philosophy in statistics</a></li>
+  <li><a href="#sec:statphil" id="toc-sec:statphil" class="nav-link" data-scroll-target="#sec\:statphil"><span class="header-section-number">1.3.2</span> Statistics in philosophy</a></li>
+  </ul></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">1.4</span> Discussion Questions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-intro" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Philosophy, statistics, and the philosophy of statistics</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>I rush from science to philosophy, and from philosophy to our old friends the poets; and then, over-wearied by too much idealism, I fancy I become practical in returning to science. Have you ever attempted to conceive all there is in the world worth knowing—that not one subject in the universe is unworthy of study? The giants of literature, the mysteries of many-dimensional space, the attempts of Boltzmann and Crookes to penetrate Nature’s very laboratory, the Kantian theory of the universe, and the latest discoveries in embryology, with their wonderful tales of the development of life—what an immensity beyond our grasp!</p>
+</blockquote>
+<div class="flushright">
+<p>— Karl Pearson, <em>The New Werther</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</div>
+<p>Over time, science, technology, engineering, and mathematics (STEM) curricula at many colleges and universities have become more and more specialized. Many Americans see higher education as a pathway to a good job, rather than, say, a pathway to educated citizenship <span class="citation" data-cites="Skorton2018">(<a href="#ref-Skorton2018" role="doc-biblioref">Skorton &amp; Bear, 2018</a>)</span>. There are good reasons to view higher education in this way; rising costs make it difficult for students to justify studying subjects that do not have a clear return on investment. STEM fields in general, and statistics and data science in particular, are seen as a great return on investment <span class="citation" data-cites="Davenport2012">(<a href="#ref-Davenport2012" role="doc-biblioref">Davenport D.J et al., 2012</a>)</span>. So why should training in a STEM field include the study of an (ostensibly) esoteric field like the philosophy of statistics? In my view, there are two reasons. First, as Karl Pearson alludes to above, stepping outside of one’s primary STEM concentration, and diversifying one’s skills and knowledge, can be a real joy. Second, as I hope to demonstrate throughout this book, an awareness of philosophical issues in statistics can make us better statisticians and data scientists.</p>
+<p>The preceding paragraph suggests that the audience of this book will consist primarily of individuals from STEM fields. But in addition to statisticians who wish to know something more about philosophical issues in their own discipline, I also hope that thi book will find an audience of philosophers that wish to know more about important conceptual issues in statistics. Consequently, this chapter provides an introduction to each discipline to “bring everyone up to speed”.</p>
+<section id="what-is-philosophy" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-philosophy"><span class="header-section-number">1.1</span> What is philosophy?</h2>
+<blockquote class="blockquote">
+<p>“Philosophy is a field that, unfortunately, reminds me of that old…&nbsp;joke, ‘those that can’t do, teach, and those that can’t teach, teach gym.’”</p>
+</blockquote>
+<div class="flushright">
+<p>— Lawrence Krauss, interview in The Atlantic<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</div>
+<p>Recently, popularizers of science have suggested that philosophy is a useless undertaking, a waste of time, and something that distracts us from making progress on real problems. For example, in a 2014 interview on the Nerdist Podcast, Neil de Grasse Tyson expressed his irritation with philosophers “asking deep questions” that lead to a “pointless delay in progress” <span class="citation" data-cites="gizmodo2014tyson">(<a href="#ref-gizmodo2014tyson" role="doc-biblioref">Dvorsky, 2014</a>)</span>. Similarly, Stephen Hawking has claimed that deep questions in science, such as those concerning the fundamental constituents of the universe will only be answered using data from science, such as data coming from space and particle physics. Hawking writes:</p>
+<blockquote class="blockquote">
+<p>Most of us don’t worry about these [philosophical] questions most of the time. But almost all of us must sometimes wonder: Why are we here? Where do we come from? Traditionally, these are questions for philosophy, but philosophy is dead. Philosophers have not kept up with modern developments in science. Particularly physics <span class="citation" data-cites="hawking2010grand">(<a href="#ref-hawking2010grand" role="doc-biblioref">Hawking &amp; Mlodinow, 2010</a>)</span>.</p>
+</blockquote>
+<p>Given the claims made about philosophy by such respectable figures, one might reasonably wonder why we should embark on a journey into the <em>philosophy of statistics</em>; not only might philosophy and statistics seem unrelated; the former, it is claimed, is useless!</p>
+<p>We should reject these attacks against philosophy; but in order to understand <em>why</em> we should reject them, and ultimately, to justify our study of the philosophy of statistics, we first have to achieve clarity in our conceptual framework. Most pressingly, especially for those of us who are statisticians and data scientists, we must ask: what is <em>philosophy</em>?</p>
+<p>If one has never studied philosophy in a formal setting, one is likely have certain misconceptions about what academic philosophy is and what philosophers do. It is commonly thought (wrongly, in my view) that philosophy is entirely subjective, vague, imprecise, and incapable of progress <span class="citation" data-cites="park2020progress">(<a href="#ref-park2020progress" role="doc-biblioref">Park, 2020</a>)</span>. These misconceptions are often born out of the way that the word ‘philosophy’ is used in colloquial settings. One use of the word ‘philosophy’ captures an individual’s personal outlook on life. For example, Apple co-founder Steve Jobs, at the 2005 Stanford Commencement Address said the following:</p>
+<blockquote class="blockquote">
+<p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma—which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become <span class="citation" data-cites="jobs2005commencement">(<a href="#ref-jobs2005commencement" role="doc-biblioref">Jobs, 2005</a>)</span>.</p>
+</blockquote>
+<p>Colloquially, we might say that this is Steve Jobs’ (personal) <em>philosophy</em>. Of course, there is nothing wrong with holding a personal philosophy, but holding one does not imply that one has <em>done philosophy</em> in the academic or historical sense.</p>
+<p>To distinguish between personal philosophies and academic philosophy, let’s look at how professional philosophers and professional philosophical organizations attempt to answer the question ‘What is philosophy?’ In the magazine <em>Philosophy Now</em>, artist and philosopher Colin Brookes writes that “philosophy critically examines anything and everything, including itself and its methods. It typically deals with questions not obviously addressed by other areas of enquiry, or those that remain after their activity seems complete” <span class="citation" data-cites="philosophynow_what_2009">(<a href="#ref-philosophynow_what_2009" role="doc-biblioref"><span>“What Is Philosophy and How Do We Do It?”</span> 2009</a>)</span>, the American Philosophical Association describes philosophy as a field that</p>
+<blockquote class="blockquote">
+<p>pursues questions in every dimension of human life...its techniques apply to problems in any field of study or endeavor. No brief definition expresses the richness and variety of philosophy. It may be described in many ways. It is a reasoned pursuit of fundamental truths, a quest for understanding, a study of principles of conduct. It seeks to establish standards of evidence, to provide rational methods of resolving conflicts, and to create techniques for evaluating ideas and arguments.<span class="citation" data-cites="apa_undergraduates">(<a href="#ref-apa_undergraduates" role="doc-biblioref">American Philosophical Association, 2024</a>)</span></p>
+</blockquote>
+<p>Finally, Jon Wainwright claims that “philosophy involves the analysis of arguments and concepts...power of reason...weight of evidence...[and] exposes unsupported assertions, prejudice” <span class="citation" data-cites="philosophynow_what_2009">(<a href="#ref-philosophynow_what_2009" role="doc-biblioref"><span>“What Is Philosophy and How Do We Do It?”</span> 2009</a>)</span>.</p>
+<p>Already, we might notice that academic philosophy differs from one’s personal philosophy in many ways:</p>
+<ol type="1">
+<li><p>Personal philosophies are not necessarily critical examinations.</p></li>
+<li><p>Personal philosophies might well be (and often are) absent of method. We might ask, how did Jobs <em>arrive</em> at this philosophy? It’s not entirely clear.</p></li>
+<li><p>Academic philosophy critically examines “anything and everything”—including statistics! Philosophy is a very intellectually diverse discipline; personal philosophies are typically much more limited in scope.</p></li>
+<li><p>As might be clear after hearing your uncle’s personal philosophy over Thanksgiving dinner, personal philosophies are not always (attempts at) “reasoned pursuits of fundamental truths”, and do not always consider evidence, expose unsupported assertions, etc.</p></li>
+</ol>
+<p>In addition to seeing how academic philosophy differs from personal philosophies, we also get a sense of some of the fundamental features of philosophical investigation. We see that reason, evidence, the analysis of arguments, concepts, and assumptions are all core features of philosophy. Given that science also cares about reasons, evidence, and the like, philosophy sounds a lot like science. So, what’s the difference? To answer this question, it will be important to consider some of the historical roots of of science and philosophy.</p>
+<section id="a-historical-approach" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="a-historical-approach"><span class="header-section-number">1.1.1</span> A historical approach</h3>
+<p>To the extent that science is concerned with causes and principles of the natural world, many of the earliest ancient Greek philosophers may also be considered scientists <span class="citation" data-cites="Curd2016">(<a href="#ref-Curd2016" role="doc-biblioref">Curd, 2016</a>)</span>. For example, Thales of Miletus (c.&nbsp;620 B.C.E.—c.&nbsp;546 B.C.E.) is often identified as the first person to investigate the basic natural principles and the question of the originating substances of matter; therefore, we may consider him a founder of natural science. The historical connection between philosophy and science does not end with Thales; Plato, Aristotle, Francis Bacon, Galileo Galilei, René Descartes, and Isaac Newton were all considered both philosophers and scientists. Aristotle, most often considered a philosopher, made contributions to geology, physics, zoology, biology, and medicine. Descartes and Newton both made important contributions to metaphysics and epistemology—subdisciplines of philosophy—as well as physics and mathematics. In fact, until around the 19<span class="math inline">\(^{th}\)</span> century, what we now call science was called “natural philosophy” <span class="citation" data-cites="cahan2003">(<a href="#ref-cahan2003" role="doc-biblioref">Cahan, 2003</a>)</span>.</p>
+<p>It was not until the 18<span class="math inline">\(^{th}\)</span> and 19<span class="math inline">\(^{th}\)</span> centuries that philosophy and science started to split apart as two “separate” disciplines. One explanation for this split is that, at around this time in history, many thinkers developed empirically rooted answers to important questions. Once answers became available and more broadly accepted, these fields split apart from philosophy into their own disciplines. Philosophy then, gets stuck with all of the hard questions for which empirically rooted answers are not (yet) available.</p>
+<p>This theory, though it may be incomplete <span class="citation" data-cites="Papineau2018">(<a href="#ref-Papineau2018" role="doc-biblioref">Papineau, 2018</a>)</span>, illuminates two important features of philosophy. First, on this view, the charge that philosophy does not make progress—a charge made by Neil de Grasse Tyson, Lawrence Krauss, Stephen Hawking, among others—is misguided. Philosophy <em>does</em> make progress; it’s just that once it progresses, we often stop calling it philosophy! Second, on this view, we see that philosophers are not “anti-empirical”; they very much care about and value empirical evidence. It just so happens that many of the (important!) questions that they are concerned with are <em>underdetermined</em> by all of the available empirical evidence; that is, the available empirical evidence equally supports several different answers to a given philosophical question, and philosophers must resort to other tools. Thus, the difference between philosophers and scientists is not that, somehow, the latter are more intellectually rigorous. Rather, it’s that the latter limits herself to questions that, at present, are empirically driven. Such a difference is not disparaging to philosophers. Many of the most important questions about us and our world have not yet been decided by, and perhaps <em>cannot</em> be decided by, empirical evidence alone. Such questions—for example, what makes a just society? what set of criteria clearly demarcate science from pseudo-science?—may be of critical importance. Philosophers use important and imaginative tools of reasoning, such as thought experiments, to discover answers to these questions.</p>
+<p>Historically then, it seems that philosophy was a broad category that included the sciences (e.g., physics, biology) as subdisciplines. But now, if philosophy no longer includes the sciences, what is its content?</p>
+</section>
+<section id="core-subdisciplines-of-philosophy" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="core-subdisciplines-of-philosophy"><span class="header-section-number">1.1.2</span> Core subdisciplines of philosophy</h3>
+<p>It is standard to parse the discipline of philosophy into several subdisciplines. For simplicity, we will look at four: logic, metaphysics, epistemology, and ethics. We will consider each of these, noting that there is no clean and uncontroversial way to partition the field of philosophy; there is much overlap, between the subdisciplines presented here. Also, we note that many philosophers work in fields denoted <em>the philosophy of X</em>, where X is some other field or concept, such as physics, psychology, biology (or science more broadly), mind, mathematics, or...statistics!</p>
+<section id="subsubsec:logic" class="level4" data-number="1.1.2.1">
+<h4 data-number="1.1.2.1" class="anchored" data-anchor-id="subsubsec:logic"><span class="header-section-number">1.1.2.1</span> Logic</h4>
+<p>As noted above, reason, evidence, and the analysis of arguments are core features philosophy. The branch of philosophy that has as its focus the analysis of arguments is called <em>logic</em>. As an entry point into defining logic—and delimit it from other branches of philosophy, and from science itself—consider the following three arguments:</p>
+<div class="center">
+<p><strong>Argument #1</strong></p>
+</div>
+<dl>
+<dt>P1</dt>
+<dd>
+<p>On any given day, if it is raining, then Newman will not go on his postal route.</p>
+</dd>
+<dt>P2</dt>
+<dd>
+<p>Today, it is raining.</p>
+</dd>
+<dt>C</dt>
+<dd>
+<p>So, today, Newman will not go on his postal route.</p>
+</dd>
+</dl>
+<div class="center">
+<p><strong>Argument #2</strong></p>
+</div>
+<dl>
+<dt>P1</dt>
+<dd>
+<p>If Kramer swims in the East River, he will smell bad.</p>
+</dd>
+<dt>P2</dt>
+<dd>
+<p>Kramer smells bad.</p>
+</dd>
+<dt>C</dt>
+<dd>
+<p>So, Kramer swam in the East River.</p>
+</dd>
+</dl>
+<div class="center">
+<p><strong>Argument #3</strong></p>
+</div>
+<dl>
+<dt>P1</dt>
+<dd>
+<p>The car salesman claimed that George’s 1989 Chrysler LeBaron convertable was owned by the actor Jon Voight.</p>
+</dd>
+<dt>P2</dt>
+<dd>
+<p>The owner’s manual shows that the previous owner’s last name was Voight.</p>
+</dd>
+<dt>C</dt>
+<dd>
+<p>Therefore, the previous owner of George’s car was Jon Voight.</p>
+</dd>
+</dl>
+<p>In each case, the author of the argument is using the premises—P1 and P2—as reasons to believe the conclusion, C.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> <em>But in what sense do the premises provide good reasons for believing the conclusion?</em> Logic, generally defined as the study of correct reasoning, attempts to answer this question. In <strong>Argument #1</strong>, we should note that the premises provide good reasons for believing the conclusion because it is <em>impossible</em> for the premises to be true and the conclusion to be false; such an argument is called <em>deductively valid</em>, and the premises are said to <em>logically entail</em> the conclusion. Arguments that either are or attempt to be deductively valid are called <em>deductive arguments</em>.</p>
+<p>We might be enticed to give the same analysis of <strong>Argument #2</strong> that we gave of <strong>Argument #1</strong>; however, <strong>Argument #2</strong> is invalid. To see this fact, consider that Kramer might smell bad for a whole host of reasons; he may, for example, have just finished his Karate lesson.</p>
+<p><strong>Argument #3</strong> is a bit different in that the premises do not logically entail the conclusion, but they may give good reasons to believe the conclusion—there are not that many people with the last name ‘Voight’, actors like snazzy convertibles, and the salesman’s testimony provides some basis for believing the conclusion. But of course, the car might be owned by <em>John</em> Voight the periodontist, not <em>Jon</em> Voight the actor. Arguments like <strong>Argument #3</strong>—ones that might provide good reasons to believe the conclusion but don’t <em>logically entail</em> it—are called <em>inductive arguments</em>.</p>
+<p>We should note that the assessments of these arguments is not entirely <em>empirical</em>. We need not check anything about the empirical, physical world—e.g., that it is in fact raining—to assess whether <strong>Argument #1</strong> is valid. Rather, many assessments of arguments are based on philosophical reasoning that need not consult with empirical reality. Scientists sometimes assert that reason and logic fall under the purview of science, but historically, it is a branch of philosophy. Further, to the extent that science is concerned with empirical considerations, logic is not a science (though, we note that logic is essential to the proper functioning of science!). In the chapters to come, we will consider the benefits of thinking of statistics as a branch of logic—a branch that helps us reason property about incomplete, uncertain data.</p>
+</section>
+<section id="metaphysics" class="level4" data-number="1.1.2.2">
+<h4 data-number="1.1.2.2" class="anchored" data-anchor-id="metaphysics"><span class="header-section-number">1.1.2.2</span> Metaphysics</h4>
+<p>What does it mean to say that <span class="math inline">\(X\)</span> <em>causes</em> <span class="math inline">\(Y\)</span>? On the surface, this may seem like an easy question. The gas pedal <em>caused</em> the car to move forward. The toxic envelope glue <em>caused</em> Susan’s death. But deciding on what causal relations exist in the world can be, in fact, quite difficult. Perhaps the most famous exposition of the difficulties of causality are given by the 18th century philosopher David Hume. As an empiricist philosopher, Hume believed that knowledge of a causal relationship between any two objects must be based strictly on experience. But, according to Hume, experience can only reveal temporal relationships—that <span class="math inline">\(Y\)</span> occurred <em>after</em> <span class="math inline">\(X\)</span> occurred—and contiguity—that <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have been in contact. Experience cannot establish a <em>necessary</em> connection between cause and effect—that <span class="math inline">\(Y\)</span> happened as the result of <span class="math inline">\(X\)</span>—because one can imagine, without logical contradiction, a case in which the cause does not produce its usual effect (e.g., one can imagine that Susan licked the envelops but did not die). According to Hume, we mistakenly believe that there are causes in the world because past experiences have created a habit in us to think in this way. Really, we have no <em>direct knowledge</em> of anything more than spatial and temporal contiguity; anything else that we infer about causality in the world lies beyond direct experience <span class="citation" data-cites="Morris2019">(<a href="#ref-Morris2019" role="doc-biblioref">Morris &amp; Brown, 2019</a>)</span>.</p>
+<p>Hume’s discussion of causality should be concerning to those of us interested in statistics and science. Many would agree that modern science relies heavily on statistical methods to attempt to provide information about causal relationships; but it seems reasonable to ask whether statistical methods are well-equipped to account for anything more than correlations among variables. But establishing a casual relationship would require going beyond mere correlations. Although correlations may suggest a causal relationship between two variables, correlations are not sufficient for establishing a causal relationship.</p>
+<p>The question about the nature of causality can be thought of as a <em>metaphysical</em> question. Metaphysics is the study of the fundamental nature of reality. Why is there something rather than nothing? Are space and time discrete or continuous? What is time, and what does it mean for entities to persist through time? Since metaphysics is not constrained by the need for empirical verification, some might think of metaphysics as asking <em>why?</em> in a larger domain than science typically does. However, we should note that (good) metaphysics ought to be consistent with known empirical results of science and ought not be internally contradictory.</p>
+<p>The scientifically-oriented reader—perhaps in agreement with de Grasse Tyson, Hawking, and Krauss—might posit that metaphysical questions like the ones given in the previous paragraph are ultimately a waste of time. However, developments in philosophy in the twentieth century suggest that it is not so easy to dismiss metaphysics. Culminating in the mid-twentieth century, a movement called <em>logical positivism</em> (also known as <em>logical empiricism</em>), composed of scientists and empirically minded philosophers, sought to do away with metaphysics. Logical positivists adhered to what is sometimes called the <em>verifiability criterion of meaning</em>. This criterion states that only claims that can (at least in theory) be verified empirically, or claims that are logical tautologies, count as genuine, meaningful knowledge <span class="citation" data-cites="dphil2009">(<a href="#ref-dphil2009" role="doc-biblioref">Dphil, 2009</a>)</span>. All other claims—e.g., metaphysical claims about causality, god, the nature of being, etc.—are meaningless. For example, following Hume, the logical positivists believed that causal relations were not directly observed, and could not be directly measured; thus, claims about causal relations were meaningless.</p>
+<p>It is generally accepted that, with respect to the verifiability criterion of meaning, the logical positivist program is untenable, for at least two reasons <span class="citation" data-cites="fetzer2010carl">(<a href="#ref-fetzer2010carl" role="doc-biblioref">Fetzer, 2010</a>)</span>. First, the criterion itself is thought to be self-refuting. After all, the proposition “only claims that can (at least in theory) be verified empirically, or claims that are logical tautologies, count as genuine, meaningful knowledge” is neither about the physical world, nor is it a logical tautology.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> The second criticism of the verifiability criterion—which may be particularly interesting to statisticians—is closely related to data collection. That claim <span class="math inline">\(C\)</span> can be verified empirically assumes that one can go out into the world and collect data relevant to <span class="math inline">\(C\)</span>. But we might wonder: what principles guide decisions about which data are relevant to <span class="math inline">\(C\)</span>, and which are not? Surely, data collection is guided, at least in part, by theory;<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> to see this, consider measurements taken by a bulb thermometer. Such thermometers rely on, among other things, a theory about the way in which liquid takes up space at different temperatures. Importantly, we might challenge the use of an anomalous temperature reading by challenging whether the particular thermometer used was calibrated properly, and calibration relies on the underlying liquid-temperature theory. If theory guides our data collection processes, then “empirical verification” is no longer entirely empirical; it is tainted by theory. As such, the verifiability criterion seems suspect, and we might entertain the meaning of metaphysical claims; long live metaphysics!</p>
+</section>
+<section id="epistemology" class="level4" data-number="1.1.2.3">
+<h4 data-number="1.1.2.3" class="anchored" data-anchor-id="epistemology"><span class="header-section-number">1.1.2.3</span> Epistemology</h4>
+<p>Above, we saw that the nature of causality was a metaphysical question. But, suppose, in some future utopia, metaphysicians have uncovered the nature of causality; that is, the question <em>what is a causal relation?</em> has been answered. This fact in itself would not lay to rest all philosophical questions related to causality. Even if we have defined a causal relation, we might still wonder how to <em>gain knowledge</em> about causal relations. For example, an account of what it means for cigarette smoking to cause cancer does not necessarily provide an answer the question <em>how do we know that cigarette smoking causes cancer?</em></p>
+<p>What does it mean when we say that an agent <em>A</em> <em>knows</em> a claim <em>C</em>, for example, that “the Moors invaded Spain in the 8th century”? Clearly, in order to know <em>C</em>, <em>A</em> must actually <em>believe</em> it. If <em>A</em> doesn’t believe <em>C</em>, it would be odd to say that <em>A</em> actually knows <em>C</em>. Similarly, it would be odd to give <em>A</em>’s belief the status of knowledge if <em>C</em> weren’t, in fact, <em>true</em>. Even if, for some reason, <em>A</em> believed that “<span class="math inline">\(2+2 = 5\)</span>”, this belief would not constitute knowledge. Finally, according to the canonical view of knowledge, first espoused by Plato, a <em>true belief</em> is not sufficient for claiming knowledge; knowledge also requires <em>justification</em>. Suppose that <em>A</em> had no idea whether <em>C</em> were true, and decided to believe it based on a coin flip. Such a belief, even though true, would hardly count as knowledge because <em>A</em> had no justification for the belief in <em>C</em>.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>In addition to asking for a definition of knowledge, epistemologists are also interested in, among other things, questions about sources of knowledge—e.g., given that our perception is fallible, under what conditions is it reliable for producing knowledge?—the limits of knowledge—e.g., are there some questions for which the answer is unknowable?—and the meaning of justification. Because science is thought to play such an important role in knowledge generation, epistemologists are especially interested in scientific discoveries, and the methodologies that lead to such discoveries.</p>
+<p>Many epistemologists are familiar with, and make use of, statistics in their work. Some make use of statistical methodologies as frameworks for reliable knowledge generation—as a way to update beliefs based on new information. Others interrogate the reliability of certain statistical methodologies (e.g., hypothesis testing) for generating knowledge. In <span class="quarto-unresolved-ref">?sec-frequentist</span> and <span class="quarto-unresolved-ref">?sec-Bayesian</span>, we will learn about, and consider objections raised against, popular statistical methods.</p>
+</section>
+<section id="ethics" class="level4" data-number="1.1.2.4">
+<h4 data-number="1.1.2.4" class="anchored" data-anchor-id="ethics"><span class="header-section-number">1.1.2.4</span> Ethics</h4>
+<p>In 2017, neuropathologist Dr.&nbsp;Ann McKee published a paper examining the brains of 202 deceased football players. Of the 111 NFL players examined, 110 of those were found to have chronic traumatic encephalopathy (CTE) <span class="citation" data-cites="ward2017">(<a href="#ref-ward2017" role="doc-biblioref">Ward et al., 2017</a>)</span>. CTE is a degenerative disease believed to be caused by repeated blows to the head and can only be diagnosed after death; so, there is no way to know how many living NFL players have the disease. Although McKee’s sample of brains of NFL players was far from random—many of the brains in the sample were from players whose families suspected that CTE was present—there is still some scientific basis for concluding that NFL player’s run a serious risk of developing CTE. About 1,300 former players have died since the McKee’s group began studying CTE; so, even if every one of the other 1,200 players had tested negative—an implausible scenario—the minimum CTE prevalence would be close to 9 percent. This rate is vastly higher than in the population of non-football players <span class="citation" data-cites="ward2017">(<a href="#ref-ward2017" role="doc-biblioref">Ward et al., 2017</a>)</span>.</p>
+<p>Typically, we think about sports in terms of <em>personal preference</em>. As with many other preferences—whether we prefer the mountains or the beech; bananas, apples or oranges; Apple or Andriod; vanilla or chocolate—sports preferences seem personal; you might enjoy football, and I might enjoy hockey, and there is no compelling reason why either of us should change our preference. The study of CTE, however, challenges this view about sports, at least with respect to football. It appears that playing football comes with serious risk. We might ask whether one <em>ought to</em> play football given those risks. Further, we might ask whether we, as a society, <em>ought to</em> idolize and support a game that encourages millions of young people to risk serious injury for a very small chance of success.</p>
+<p>Whatever you think about these questions—and reasonable people might disagree about the answers—it seems clear that there is a <em>moral</em> or <em>ethical</em> component to them. Almost always, when we ask questions about what we <em>ought</em> to do, either as individuals, small groups, or as a society, we are asking ethical questions. Ethicists ask a wide range of questions, including: What does it mean to live a <em>good</em> life? Is it possible to derive what we <em>ought</em> to do from what is the case?<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Do we have special obligations to the global poor? Ought we eat animals? Is abortion permissible? What obligations do we have to the environment? Ought we make consequential decisions about mortgage loans based on uninterpretable machine learning algorithms? We will consider some ethical questions throughout this book.</p>
+</section>
+</section>
+</section>
+<section id="what-is-statistics" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-statistics"><span class="header-section-number">1.2</span> What is statistics?</h2>
+<p>To contextualize the discipline of statistics, it might be helpful to recall a distinction made in Section <a href="#subsubsec:logic" data-reference-type="ref" data-reference="subsubsec:logic">1.1.2.1</a>—the distinction between deductive and inductive logic. Recall that an argument is deductive just in case the premises <em>logically entail</em> the conclusion. That is, it is impossible for the premises to be true and the conclusion to be false. By contrast, an argument whose premises do not logically entail the conclusion is inductive. Of course, inductive arguments can be very strong; the fact that objects, in the past, have an acceleration due to gravity of (approximately) 9.81 m/s<span class="math inline">\(^2\)</span> provides good reasons to believe that future objects will have this same acceleration due to gravity. But, this conclusion doesn’t necessarily follow; we can <em>conceive</em> of a world in which physical laws might change. What methods reliably produce strong inductive arguments? In empirical domains that allow for the collection of data, inferential statistics can be thought of as a set of methods for drawing conclusions about the world from limited information. The conclusions go beyond the data at hand, and thus, the arguments that statistics presents are inductive.</p>
+<p>This analysis gives a very high level contextualization of statistics. Where do we go from here? What are some of the actual methods or principles that statistics utilizes to reliably draw conclusions? First, it will be instructive to introduce some terminology to help understand inference problems. Then, we will consider seven foundational principles of statistical theory and practice.</p>
+<section id="a-very-short-and-general-primer-on-statistical-inference" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="a-very-short-and-general-primer-on-statistical-inference"><span class="header-section-number">1.2.1</span> A very short and general primer on statistical inference</h3>
+<p>As mentioned above, inferential statistics can be thought of as a set of methods used for drawing conclusions about the world from limited information. The limited information is given in a <em>dataset</em> or <em>sample</em>, and will consist of <em>variables of interest</em> measured for each of <span class="math inline">\(n\)</span> <em>units</em> in the sample (the entities about which we want to learn). The set of all of the units about which we want to learn—including all units in the sample, and almost always, units not in the sample—is called the <em>target population</em>.</p>
+<p>For example, suppose that we are interested in learning about the spending practices of customers of artist <span class="math inline">\(A\)</span>. To do so, we might ask a randomly selected group of <span class="math inline">\({n = 25}\)</span> people at an artist <span class="math inline">\(A\)</span> concert some questions: their age, gender, income, cash on hand, proportion of times they’ve purchased merchandise at a concert before, etc. In this case, the units are individual concertgoers of artist <span class="math inline">\(A\)</span>; the sample consists of the <span class="math inline">\({n = 25}\)</span> randomly chosen concertgoers of whom we asked questions; the population consists of all potential concertgoers of artist <span class="math inline">\(A\)</span>; the variables of interest are age, gender, income, cash on hand, proportion of times merchandise has been purchased, etc.</p>
+<p>We might be interested <em>describing</em> or <em>summarizing</em> individuals in the sample. Some examples might be: how much cash does the typical person in the sample have on hand? Or, what proportion of people in the sample have never purchased merchandise at a concert before? But such summaries are limiting in that they only tell us about this sample, and not about the larger population.</p>
+<p>Alternatively, we might be interested in <em>inferring</em> a particular feature of the entire population—such features are called <em>parameters</em>—based on the sample. For example, we might be interested in inferring the average income of potential concertgoers of artist <span class="math inline">\(A\)</span>. Or, we might like to predict how likely is it that a particular person will purchase an item given that they are 28 years old, female, earn <span class="math inline">\(\$45{,}000\)</span> per year, have <span class="math inline">\(\$35\)</span> in hand, and have purchased merchandise at <span class="math inline">\(10\%\)</span> of the concerts that they’ve attended before. To make such inferences, we need to do more than simply summarize samples. Importantly, to conduct statistical inference, we need to construct a statistical model that represents the data well. We will discuss some particulars about statistical models and inference methods in later chapters. For now, with this setup in hand, we will turn to some features—or pillars of statistical inference—that different inference methods have in common.</p>
+</section>
+<section id="pillars-of-statistical-wisdom" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="pillars-of-statistical-wisdom"><span class="header-section-number">1.2.2</span> Pillars of statistical wisdom</h3>
+<p>In <em>The Seven Pillars of Statistican Wisdom</em>, Stephen M. Stigler attempts to answer an important question posed above: what are some of the actual methods or principles that statistics utilizes to reliably draw conclusions? In doing so, Stigler formulates a possible answer to the question <em>what is statistics?</em>, by presenting seven principles that form a conceptual foundation for statistics as a discipline. He writes:</p>
+<blockquote class="blockquote">
+<p>In calling these seven principles the Seven Pillars of Statistical Wisdom, I hasten to emphasize that these are seven <em>support</em> pillars—the disciplinary foundation, not the whole edifice, of Statistics. All seven have ancient origins, and the modern discipline has constructed its many-faceted science upon this structure with great ingenuity and with a constant supply of exciting new ideas of splendid promise. But without taking away from that modern work, I hope to articulate a unity at the core of Statistics both across time and between areas of application <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span>.</p>
+</blockquote>
+<p>It should be emphasized that these principles—aggregation, information, likelihood, inter-comparison, regression, design, and residual—are not necessary and sufficient conditions for what constitutes statistics; for example, the aggregation of information is not necessarily an example of a statistical analysis, and the omission of experimental design does not disqualify an analysis from being statistical. Instead, we might think of analyses counting as “statistical” as having a <em>family resemblance</em> to one another <span class="citation" data-cites="Wittgenstein2001">(<a href="#ref-Wittgenstein2001" role="doc-biblioref">Wittgenstein, 2001 (1953)</a>)</span>, and Stigler’s pillars are common to many (but not all). We discuss each of these pillars in turn, and highlight places where each pillar borrows from or makes use of philosophy, emphasizing again that statistics can be understood as a branch of philosophy. Note that <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> takes a historical approach to the pillars; the approach here is less historical and more conceptual.</p>
+<section id="aggregation" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="aggregation"><span class="header-section-number">1.2.2.1</span> Aggregation</h4>
+<p>Aggregation is the combining of observations for the purposes of information gain. At first, aggregation might seem odd. Suppose that we have <span class="math inline">\(n\)</span> individuals, and for each individual, we measure a single variable—e.g., an individual’s yearly income. What does one <em>gain</em> by reducing <span class="math inline">\(n\)</span> measurements to a single number, for example, the arithmetic (or <em>sample</em>) mean, median, or mode? We typically think of these numbers as <em>measures of center</em>; thus, they are meant to tell us about the <em>average</em> or <em>typical</em> unit under study. But, of course, it might be the case that no unit takes on the mean or median, and in fact, sometimes it is <em>impossible</em> for an individual unit to take on these measures of center! So, in what sense are they measuring something typical?</p>
+<p>First uses of the sample mean as a measure of center in the social sciences saw criticisms along these lines. For example, as reported in <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span>, the Belgian statistician Adolphe Quetelet used the mean as a way of comparing human populations with respect to a particular variable—e.g., height. <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> writes:</p>
+<blockquote class="blockquote">
+<p>Already in the 1840s a critic was attacking the idea. Antoine Augustin Cournot thought the Average Man would be a physical monstrosity: the likelihood that there would be any real person with the average height, weight, and age of a population was extremely low. Cournot noted that if one averaged the respective sides of a collection of right triangles, the resulting figure would not be a right triangle (unless the triangles were all proportionate to one another).</p>
+</blockquote>
+<p>Nevertheless, Quetelet thought that the mean was meaningful, and could stand in as a “typical” individual, or “a group representative for comparative analysis” <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span>. Of course, the practice of using the sample mean to summarize the center of measurements with respect to a given variable is common practice; the sample mean does well at describing what is “typical” in certain contexts, but not in others. The sample mean is not particularly robust to outliers, which means that the addition of outliers can have a large effect on the value. The sample median—the value at which half of the measurements are above and half are below—is more robust to outliers, and thus, in some cases, more appropriate.</p>
+<p>Measures of center are not the only forms of aggregation, and in fact, if reported alone, a misleading picture of the data often emerges. For example, it might be important for one to live in a city where the average daily high temperature in the summer months is 70 degrees Fahrenheit. But that information is not enough, because (it is at least conceivable that) a city with such an average might have many summer days with a high temperature of around 30 degrees, and many others with a high temperature of around 100 degrees, such that the average is around 70 degrees. These sorts of temperature swings are likely not in accordance with the desire to live in a city with an average daily high temperature in the summer months of 70 degrees! Missing in this example is some measure of variability; measures of variability, such as the range and variance, also combine observations for the purposes of information gain and summary, and thus, are aggregations.</p>
+<p>It is important to note that aggregation does not just occur as simple summary statistics. For example, consider the statistical model of the form <span class="math inline">\({Y_i = f(x_i; \boldsymbol{\theta}) + \varepsilon_i}\)</span>, where <span class="math inline">\(\boldsymbol\theta\)</span> are a vector of parameters, <span class="math inline">\(\boldsymbol\theta = (\theta_1,...,\theta_p)\)</span>; <span class="math inline">\(f(x_i; \boldsymbol\theta)\)</span> represents the mean of <span class="math inline">\(Y_i\)</span> at a given <span class="math inline">\(x_i\)</span> and <span class="math inline">\(\boldsymbol\theta\)</span>; and <span class="math inline">\(\varepsilon_i\)</span> represents random error (with zero mean).<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Estimates of <span class="math inline">\(\boldsymbol\theta\)</span>, found for example, by least squares or maximum likelihood estimation, can be thought of as “weighted aggregates of data that submerge the identity of individuals” <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Finally, we note that discussions above about measures of center have philosophical and empirical content; the choice of the median over the arithmetic mean as a summary statistic relies on the meaning and understanding of the concepts “typical” or “average”, and empirical considerations alone cannot tell us what is the right meaning of the term “typical” in a given context. Aggregation—a pillar of statistical wisdom—is informed by philosophical considerations!</p>
+</section>
+<section id="subsection:information" class="level4" data-number="1.2.2.2">
+<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="subsection:information"><span class="header-section-number">1.2.2.2</span> Information</h4>
+<p>In studying aggregation, we learned that we can gain information by combining observations. Let’s expand upon this idea a bit. Suppose we have a jar full of <span class="math inline">\(c\)</span> candy beans,<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> where <span class="math inline">\(c\)</span> is unknown. We’d like to estimate <span class="math inline">\(c\)</span>. Our estimation process is as follows: we ask a diverse group of <span class="math inline">\(n\)</span> people to each give an independent estimate of <span class="math inline">\(c\)</span>. Call each estimate <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i = 1,...,n\)</span>.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> We then average the <span class="math inline">\(n\)</span> values together, using the sample mean: <span class="math display">\[
+\displaystyle\bar{X} = \sum_{i=1}^n X_i.
+\]</span> Here, we’ve combined observations in a way that increases information about <span class="math inline">\(c\)</span>. That is, <span class="math inline">\(\bar{X}\)</span> will be more precise as an estimator of <span class="math inline">\(c\)</span> than any individual guess, <span class="math inline">\(X_i\)</span>. But how much more precise? What is the relationship between <span class="math inline">\(n\)</span> and precision? How much information do we gain by, say, doubling the number of (independent) guesses? It turns out that, if the standard deviation of each guess is the same—call it <span class="math inline">\(\sigma\)</span>—then some simple probability theory can give us an answer: <span class="math display">\[
+\begin{aligned}
+Var(\bar{X}) &amp;= Var\bigg(\frac{1}{n}\sum^n_i X_i\bigg) \overset{i}{= } \frac{1}{n^2}\sum^n_i Var(X_i) \\
+&amp;= \frac{1}{n^2}\sum^n_i \sigma^2 =  \frac{\sigma^2}{n}.
+\end{aligned}
+\]</span> Thus, since the standard deviation is the square root of the variance, <span class="math inline">\(sd(\bar{X}) = \sigma/\sqrt{n}\)</span>. If we think of information gain as an increase in the precision of our estimator <span class="math inline">\(\bar{X}\)</span>, and we measure precision using the (multiplicative) inverse of the standard deviation, then we see that, to increase the precision of our estimator by a factor of <span class="math inline">\(k\)</span>, we need to multiply the number of guessers by <span class="math inline">\(k^2\)</span>: <span class="math inline">\(k\big/ sd(\bar{X}) = \frac{k}{\sigma/\sqrt{n}} = \frac{k\sqrt{n}}{\sigma} = \frac{\sqrt{k^2n}}{\sigma}\)</span>. As <span class="citation" data-cites="Stigler2016">(<a href="#ref-Stigler2016" role="doc-biblioref">Stigler, 2016</a>)</span> writes:</p>
+<blockquote class="blockquote">
+<p>The implications of the root-n rule were striking: if you wished to double the accuracy of an investigation, it was insufficient to double the effort; you must increase the effort fourfold. Learning more was much more expensive than generally believed.</p>
+</blockquote>
+<p>Note that we made some important assumptions when describing information gain and precision in terms of the root-n rule. One important assumption was that the guesses were independent. By independent, we mean that no individual guesser was influenced, either directly or indirectly, by any other guesser. It turns out that, without independence, the derivation above is not correct; <span class="math inline">\(sd(\bar{X})\)</span> will be larger.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> What can we say about information gain in such cases? Intuitively, if guesser <span class="math inline">\(X_i\)</span> influences <span class="math inline">\(X_j\)</span>, we would expect our sample to contain <em>less</em> information than if no influence occurred. To quantify how much less, we could calculate an <em>effective sample size</em>, <span class="math inline">\(n_e\)</span>, which would be less than <span class="math inline">\(n\)</span> whenever measurements are positively correlated.</p>
+</section>
+<section id="sec:likelihood" class="level4" data-number="1.2.2.3">
+<h4 data-number="1.2.2.3" class="anchored" data-anchor-id="sec:likelihood"><span class="header-section-number">1.2.2.3</span> Likelihood</h4>
+<p>Consider a thought experiment given by Sir Ronald Fisher in his 1935 work <em>Design of Experiments</em> (<span class="citation" data-cites="Fisher1935">Fisher (<a href="#ref-Fisher1935" role="doc-biblioref">1935</a>)</span>). A woman at a tea party—let’s call her Elaine— claims that, without looking, she is able to distinguish between two scenarios about a given cup of tea:</p>
+<ol type="1">
+<li><p>the cup has been prepared by pouring milk first and then tea;</p></li>
+<li><p>the cup has been prepared by pouring tea first, and then milk.</p></li>
+</ol>
+<p>How might we decide whether Elaine actually has this ability? One option, which Fisher described in <span class="citation" data-cites="Fisher1935">Fisher (<a href="#ref-Fisher1935" role="doc-biblioref">1935</a>)</span>, is to collect some data—testing Elaine’s ability to distinguish between (1) and (2)—and see how likely those data are under the assumption that Elaine does <em>not</em> have this ability. Fisher called an assumption of this type—the status quo, that no effect is present—the <em>null hypothesis</em>, denoted <span class="math inline">\(H_0\)</span>. Fisher describes the data collection as follows:</p>
+<blockquote class="blockquote">
+<p>We will consider the problem of designing an experiment ... [to be] mixing eight cups of tea, four in one way and four in the other, and presenting them to the subject for judgment in a random order. The subject has been told in advance of what the test will consist, namely, that she will be asked to taste eight cups, that these shall be four of each kind. <span class="citation" data-cites="Fisher1935">Fisher (<a href="#ref-Fisher1935" role="doc-biblioref">1935</a>)</span></p>
+</blockquote>
+<p>The goal for Elaine is to correctly identify the four cups of each kind. If Elaine doesn’t have this ability—that is, if <span class="math inline">\(H_0\)</span> is true—then we would expect her to correctly identify all four cups of each kind approximately 1.4% of the time. The full probability distribution<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> for <span class="math inline">\(X = \#\)</span> of cups correctly identified is given in Table <a href="#table:tea" data-reference-type="ref" data-reference="table:tea">1.1</a>.</p>
+<div class="center">
+<div id="table:tea">
+<table class="caption-top table">
+<caption>The probability distribution of <span class="math inline">\(X = \#\)</span> of cups correctly identified by Elaine. The possible values are <span class="math inline">\(0,1,...,4\)</span>.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(P(X = x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="math inline">\(1/70 \approx 0.014\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="math inline">\(16/70 \approx 0.229\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><span class="math inline">\(16/70 \approx 0.514\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"><span class="math inline">\(16/70 \approx 0.229\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><span class="math inline">\(1/70 \approx 0.014\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>We can use this probability distribution to decide whether a given dataset provides <em>evidence against</em> the null hypothesis as follows: if Elaine <em>does</em> have the ability to distinguish between (1) and (2), then we would expect her to correctly identify all of the cups. This result, <span class="math inline">\(X = 4\)</span>, is rare under <span class="math inline">\(H_0\)</span>. So, if we observe <span class="math inline">\(X = 4\)</span>, then we have evidence against <span class="math inline">\(H_0\)</span>. Conversely, if Elaine correctly identifies zero, one, two, or three of the cups, we don’t have enough evidence against <span class="math inline">\(H_0\)</span>.</p>
+<p>Broadly, the use of a probability model to make comparative judgements about data is what we mean by the likelihood pillar. <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> writes that</p>
+<blockquote class="blockquote">
+<p>In modern statistics we use a probability measure as at least part of the assessment of differences, often in the form of a statistical test, with roots going back centuries. The structure of a test is an apparently simple, straightforward question: Do the data in hand support or contradict a theory or hypothesis? The notion of likelihood is key to answering this question, and it is thus inextricably involved with the construction of a statistical test.</p>
+</blockquote>
+<p>It is important to note that, in any interesting statistical test, the data in hand will never <em>strictly</em> contradict a hypothesis; instead, the data in hand might provide evidence against <span class="math inline">\(H_0\)</span> in the following way: we might act as if a hypothesis is false if, under that hypothesis, the data in hand are improbable.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> So, in the tea example, we might act as if <span class="math inline">\(H_0\)</span>: <em>Elaine does <strong>not</strong> have the ability to distinguish between (1) and (2)</em> is false, if the data in hand are <span class="math inline">\(X = 4\)</span>, because <span class="math inline">\(X = 4\)</span> is improbable under <span class="math inline">\(H_0\)</span>.</p>
+<p>The concept of likelihood is ubiquitous in statistics, stretching far beyond hypothesis testing. As we will see in <span class="quarto-unresolved-ref">?sec-frequentist</span> and <span class="quarto-unresolved-ref">?sec-Bayesian</span>, likelihoods enter into both frequentist and Bayesian statistical methods, for example, estimating the rate of a disease in a given population. One point of contention between frequentist and Bayesian methods is the role that the likelihood ought to play!</p>
+</section>
+<section id="intercomparison" class="level4" data-number="1.2.2.4">
+<h4 data-number="1.2.2.4" class="anchored" data-anchor-id="intercomparison"><span class="header-section-number">1.2.2.4</span> Intercomparison</h4>
+<p>Consider a population where units are pages in this book. Suppose that we want to estimate <span class="math inline">\(\mu\)</span>, the average number of words per page in this book.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> From above, we know that <span class="math inline">\(\mu\)</span> is a feature of a population, called a population parameter.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> It would be tedious to count the number of words on each page to find the true average, <span class="math inline">\(\mu\)</span> (let’s suppose we don’t have software to do this for us!). But, perhaps we can choose a random sample of <span class="math inline">\(n\)</span> pages, and count the number of words on each page in the sample. Then, we can infer something about <span class="math inline">\(\mu\)</span> by using information in the sample. Naturally, we could estimate our population <span class="math inline">\(\mu\)</span> using the sample mean <span class="math inline">\(\bar{X} = \frac{1}{n}\sum^n_{i=1}X_i\)</span>, where <span class="math inline">\(X_i\)</span> is the number of words on the <span class="math inline">\(i^{th}\)</span> page in the sample (<span class="math inline">\(i = 1,...,n\)</span>). But importantly, that isn’t the end of the story. <span class="math inline">\(\bar{X}\)</span> for our sample won’t be exactly equal to <span class="math inline">\(\mu\)</span>. And worse, if we had taken a different random sample of size <span class="math inline">\(n\)</span>, the value of <span class="math inline">\(\bar{X}\)</span> would have been different! So, over different samples, <span class="math inline">\(\bar{X}\)</span> is random!</p>
+<p>If we’d like to ask how good <span class="math inline">\(\bar{X}\)</span> is at estimating <span class="math inline">\(\mu\)</span><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>—and we should ask this question!—then we should inquire about at least two things:<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
+<ol type="1">
+<li><p>Over many samples of size <span class="math inline">\(n\)</span>, on average, what will <span class="math inline">\(\bar{X}\)</span> be?</p></li>
+<li><p>Over many samples of size <span class="math inline">\(n\)</span>, how much variability will <span class="math inline">\(\bar{X}\)</span> have (i.e., what is its variance)?</p></li>
+</ol>
+<p>Some basic probability theory can help us answer these questions. If <span class="math inline">\(X_1,...,X_n\)</span> is a random sample of word counts from pages of this book, then, with respect to (a): <span class="math display">\[
+\begin{aligned}
+E(\bar{X}) &amp;= E\bigg(\frac{1}{n}\sum^n_i X_i\bigg) \\
+&amp;= \frac{1}{n}E\bigg(\sum^n_i X_i\bigg) = \frac{1}{n}\sum^n_i E(X_i) \\
+&amp;= \frac{1}{n}\sum^n_i \mu = \frac{1}{n}n\mu = \mu.
+\end{aligned}
+\]</span> This is important information: it tells us that, <em>on average <span class="math inline">\(\bar{X}\)</span> is correct</em>! With respect to (b), we saw above (section <a href="#subsection:information" data-reference-type="ref" data-reference="subsection:information">1.2.2.2</a>, in the discussion of information), that the variance of <span class="math inline">\(\bar{X}\)</span> is <span class="math inline">\(\sigma^2/n\)</span>, where <span class="math inline">\(\sigma^2\)</span> is the population variance for each <span class="math inline">\(X_i\)</span>. That is, <span class="math inline">\(\sigma^2\)</span> represents how much variability there is in the number of words per page in this book. So, now we know (a) what <span class="math inline">\(\bar{X}\)</span> is on average, and (b) how much <span class="math inline">\(\bar{X}\)</span> varies from sample to sample (if we want that variability in the original units, # of words per page, we can look at <span class="math inline">\(\sigma\big/\sqrt{n}\)</span>). These facts provide some ingredients for assessing the <em>goodness</em> of <span class="math inline">\(\bar{X}\)</span> as an estimator of <span class="math inline">\(\mu\)</span>, and we will return to a more comprehensive analysis of the goodness of estimators, and <span class="math inline">\(\bar{X}\)</span> in particular, in <span class="quarto-unresolved-ref">?sec-frequentist</span>.</p>
+<p>But, there’s a hidden problem here, which gets at the essence of what <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> calls intercomparison: <span class="math inline">\(\sigma^2\)</span> is a population parameter, and we don’t have a way of understanding the variability in <span class="math inline">\(\bar{X}\)</span> without referring to an <em>external</em> quantity, <span class="math inline">\(\sigma^2\)</span>; but in most cases, we won’t know <span class="math inline">\(\sigma^2\)</span>. Is there a way to use <em>internal information</em> to estimate <span class="math inline">\(\sigma^2\)</span>, and thus, <span class="math inline">\(Var(\bar{X})\)</span>? It turns out that we can estimate <span class="math inline">\(\sigma^2\)</span> internally using the <em>sample variance</em>: <span class="math display">\[
+S^2 = \frac{1}{n-1}\sum^n_{i=1}(X_i - \bar{X})^2.
+\]</span> How does this substitution impact the accuracy of the analysis of the goodness of <span class="math inline">\(\bar{X}\)</span> as an estimator of <span class="math inline">\(\mu\)</span>. The answer to that question depends on the context, and in particular, on the size of <span class="math inline">\(n\)</span>. <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> writes:</p>
+<blockquote class="blockquote">
+<p>With large samples, statisticians would with no reluctance replace <span class="math inline">\(\sigma\)</span> with <span class="math inline">\(\sqrt{\frac{1}{n}\sum(X_i - \bar{X})^2}\)</span> (or by Gauss’ preference, <span class="math inline">\(\sqrt{\frac{1}{n-1}\sum(X_i - \bar{X})^2}\)</span> ) when its value was not otherwise available. Gosset’s goal in the article [The Probable Error of a Mean] was to understand what allowance needed to be made for the inadequacy for this approximation when the sample was not large and these estimates of accuracy were themselves of limited accuracy.</p>
+</blockquote>
+<p>When <span class="math inline">\(n\)</span> is small, the students-<span class="math inline">\(t\)</span> distribution allows statisticians to perform rigorous analyses of how good <span class="math inline">\(\bar{X}\)</span> is as an estimator of <span class="math inline">\(\mu\)</span>, while using the substitution of <span class="math inline">\(S^2\)</span> in for <span class="math inline">\(\sigma^2\)</span>.</p>
+<p>This result is an example of intercomparison, which <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span> defines as the ability to make statistical comparisons “strictly in terms of the interior variation of the data, without reference to or reliance upon exterior criteria [e.g., <span class="math inline">\(\sigma^2\)</span>].” If estimating a population mean using a sample mean was the only context in which intercomparison arose, then intercomparison it would not rise to the status of a “pillar” of statistical wisdom. In fact, the use of interior variation to estimate exterior variation arises in many areas of statistics, including regression, analysis of variance, and more advanced statistical models.</p>
+</section>
+<section id="regression" class="level4" data-number="1.2.2.5">
+<h4 data-number="1.2.2.5" class="anchored" data-anchor-id="regression"><span class="header-section-number">1.2.2.5</span> Regression</h4>
+<p>Regression is, at its core, about relationships between variables. Can we predict the sales of a product from the amount of money spent on advertising it? Do changes in meteorological conditions—e.g., temperature, windspeed, humidity—lead to systematic changes in atmospheric ozone concentration? What can we say about the relationship between the heights of parents and the heights of their children? Questions like these clearly require a framework that can model several (well, at least two) variables, at least some of which are measured with some uncertainty (“statistical noise”).</p>
+<p>To get a sense of the fundamentals of linear regression, consider the <code>cars</code> dataset, which comes with the R statistical programming software.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> The data give some measurements of the speed of cars and the distances taken for those cars to stop. A priori, you might guess that the distance that it takes for a car to stop will increase as a function of the speed that the car was traveling. The plot in Figure <a href="#plot:cars" data-reference-type="ref+label" data-reference="plot:cars">1.1</a> confirms this suspicion. But what is the relationship? More specifically,</p>
+<p>Suppose that we increased speed by one mile per hour; how much, on average, would we need to increase our stopping distance by?</p>
+<p>How could we predict stopping distance for a new speed? We can answer these questions with regression.</p>
+<div id="plot:cars" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/scatter" class="img-fluid figure-img"></p>
+<figcaption>A plot of the speed of cars and the distances taken to stop.</figcaption>
+</figure>
+</div>
+<p>Given the plot in Figure <a href="#plot:cars" data-reference-type="ref" data-reference="plot:cars">1.1</a>, it might be reasonable to assume that there is an approximately linear relationship between speed (<span class="math inline">\(x\)</span>) and distance (<span class="math inline">\(Y\)</span>); that is <span class="math display">\[
+Y = \beta_0 + \beta_1 x + \varepsilon,
+\]</span> where <span class="math inline">\(\beta_0\)</span> is the intercept and <span class="math inline">\(\beta_1\)</span> the slope of the line relating speed and distance, and <span class="math inline">\(\varepsilon\)</span> captures what we mean by “approximately linear”. More precisely, <span class="math inline">\(\varepsilon\)</span> is a random variable centered around zero (i.e., mean zero), and models nonsystematic variability in the measurement process. That is, for each value of <span class="math inline">\(x_i\)</span>, the value of <span class="math inline">\(Y_i\)</span> is perturbed off of the true line <span class="math inline">\(f(x; \beta_0, \beta_1) = \beta_0 + \beta_1 x\)</span> (up or down) by a random draw from the random variable <span class="math inline">\(\varepsilon_i\)</span>. Notice that <span class="math inline">\(f\)</span> is given as a function of <span class="math inline">\(x\)</span>, and the fixed, unknown parameters are specified after the semicolon.</p>
+<p>If we knew the values of <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>, we could answer questions 1. and 2. above:</p>
+<p>If we increased speed by one mile per hour, we would need to increase our stopping distance <span class="math inline">\(\beta_1\)</span> units, on average.</p>
+<p>To predict stopping distance for a new speed, <span class="math inline">\(x_0\)</span>, we could compute <span class="math inline">\(f(x_0; \beta_0, \beta_1) = \beta_0 + \beta_1 x_0\)</span>. Unfortunately, these answers involve unknown quantities (parameters) <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>. An important component of regression is to <em>estimate</em> <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> based on the data. The <em>estimators</em> of <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>, call them <span class="math inline">\(\widehat{\beta}_0\)</span> and <span class="math inline">\(\widehat{\beta}_1\)</span>, could then replace <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> in 1a. and 2a. above. Note that estimation can be done in the frequentist framework—through, for example, maximum likelihood estimation or ordinary least squares<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>—or in the Bayesian framework—through, for example, the maximum a posteriori estimate.</p>
+<p>A careful reading of the questions posed in this section reveals a few important distinctions related to the goals of regression. For example, the first question in the first paragraph is about prediction—if we know the amount of money spent on advertising in a particular region, can we predict, to some degree of accuracy, sales? In constructing a regression model used for making a prediction, we are not necessarily concerned with whether that model is an accurate depiction of the world. Rather, we are concerned with whether it can tell us something useful about the <em>response variable</em>—sales in dollars—based on known measurements of the <em>predictor variable</em>—dollars spent on advertising.</p>
+<p>By contrast, the second question in the first paragraph refers not to prediction, but to “systematic changes” in the response—atmospheric ozone concentration—based on changes in the predictors—temperature, windspeed, and humidity. Here, prediction might be an auxiliary goal, but language about systematic changes seems to suggest something more; in particular, we might want to <em>explain</em> the rise in atmospheric ozone concentration in terms of changes in meteorological conditions. The need for an explanation seems to point toward an accurate depiction of the world, meaning that our model should, in some sense, model the world (e.g., through a law of nature). Models that provide explanations often raise the issue of causation. Do the predictor variables <em>cause</em> the response? In what sense? What does it mean for <span class="math inline">\(X\)</span> to cause <span class="math inline">\(Y\)</span>, anyway? These questions that arise in the regression framework have a long and fascinating history in philosophy and the sciences, and we will explore some of them in <span class="quarto-unresolved-ref">?sec-causation</span>.</p>
+</section>
+<section id="design" class="level4" data-number="1.2.2.6">
+<h4 data-number="1.2.2.6" class="anchored" data-anchor-id="design"><span class="header-section-number">1.2.2.6</span> Design</h4>
+<blockquote class="blockquote">
+<p>No aphorism is more frequently repeated in connection with field trials, then that we must ask Nature few questions, or, ideally, one question, at a time. The writer [Fisher] is convinced that this view is wholly mistaken. Nature...will best respond to a logical and carefully thought out questionnaire; indeed, if we ask her a single question, she will often refuse to answer until some other topic has been discussed.–R.A. Fisher in <span class="citation" data-cites="Stigler2016">(<a href="#ref-Stigler2016" role="doc-biblioref">Stigler, 2016</a>)</span></p>
+</blockquote>
+<p>Depression is a tricky condition to treat, and there are several treatment options to choose from. Among them are medications, such as selective serotonin reuptake inhibitors (SSRIs) and the newly approved Esketamine<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>; and talk therapies, such as cognitive behavioral therapy (CBT) and emotionally focused therapy (EFT). Suppose that we are interested in learning which treatment works best for depression, as measured using the Beck’s Depression Instrument <span class="citation" data-cites="jackson2016beck">(<a href="#ref-jackson2016beck" role="doc-biblioref">Jackson-Koku, 2016</a>)</span>. To simplify our example, consider just two medical treatments, the SSRI citalopram, and Esketamine; and one talk therapy treatment, CBT.</p>
+<p>We can think of each treatment as a categorical variable, called a <em>factor</em>, with two <em>levels</em>: either the treatment has been given to a patient at the specified dosage and schedule, or it hasn’t. We might imagine that patients receiving citalopram will receive 40 mg, once per day; patients receiving Esketamine will receive 28 mg in the form of a nasal spray, twice per week.</p>
+<p>One procedure for testing the effectiveness of treatments for depression might be to consider only one factor; that is, administer a treatment, and only that treatment, and measure its effect on depression. For example, we might administer 40 mg of citalopram once per day, for 6 weeks, to a group of <span class="math inline">\(n_1\)</span> people, and administer a placebo to a separate group of <span class="math inline">\(n_2\)</span> people; neither group receives Esketamine or CBT. Then, we could compare groups with respect to their average levels of depression. Such a procedure is called a <em>one factor at a time</em>, or OFAT, design, because it only varies one factor, while keeping all others constant.</p>
+<p>An OFAT design is an intuitively plausible design for learning about an effective treatment, and has a long history. As reported in <span class="citation" data-cites="Stigler2016">Stigler (<a href="#ref-Stigler2016" role="doc-biblioref">2016</a>)</span>, the Arabic medical scientist Avicenna, 1000 CE, comments on the importance of experimenting by changing only one factor at a time in his discussion of planned medical trials in his <em>Cannon of Medicine</em>. But as Fisher suggests in the quote above, “asking nature one question at a time” has disadvantages. For example, when compared with carefully designed experiments that vary more than one factor at a time, OFAT designs require more resources (such as more time and medication); are unable to estimate interactions between treatments (for example, whether Esketamine is only effective in conjunction with CBT); and, produce less precise estimates of the effects of each treatment <span class="citation" data-cites="czitrom1999">(<a href="#ref-czitrom1999" role="doc-biblioref">Czitrom, 1999</a>)</span>.</p>
+<p>Factorial designs are used as alternatives to OFAT designs. In factorial designs, we consider two or more factors, and allow factors to vary at the same time. To continue with our example above, imagine that we wanted to consider both citalopram and Esketamine. The administration of each would be a factor (and thus, we have a <span class="math inline">\(2\times 2\)</span> factorial design). If a patient received 28 mg of Esketamine twice per week, we might assign them a variable <span class="math inline">\(E = 1\)</span>; otherwise, we would assign <span class="math inline">\(E = 0\)</span>. Similarly, if a patient receives 40 mg of citalopram, once per day, we might assign <span class="math inline">\(C = 1\)</span>, and <span class="math inline">\(C = 0\)</span> otherwise. Importantly, in designing our experiment, it is desirable to have individuals with all combinations of <span class="math inline">\(E\)</span> and <span class="math inline">\(C\)</span>, i.e, <span class="math inline">\(E = 1\)</span> and <span class="math inline">\(C = 1\)</span>; <span class="math inline">\(E = 1\)</span> and <span class="math inline">\(C = 0\)</span>; <span class="math inline">\(E = 0\)</span> and <span class="math inline">\(C = 1\)</span>; <span class="math inline">\(E = 0\)</span> and <span class="math inline">\(C = 0\)</span>.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> Allowing all factors to vary, rather than just one, we are able to estimate interactions, for example, the extent to which taking both Esketamine and citalopram is better than taking either one alone. Of course, factorial designs exist for two-factor experiments with several levels—e.g., different doses of each drug—and for multi-factor experiments.</p>
+<p>Factorial designs are an important example of the design pillar in statistics. Many other important principles in experimental design that help us decide whether an experimental treatment is effective are described in Fisher’s <em>Design of Experiments</em> <span class="citation" data-cites="Fisher1935">(<a href="#ref-Fisher1935" role="doc-biblioref">Fisher, 1935</a>)</span>. Here are some examples:</p>
+<p><em>Randomization</em>. In a randomized experiment, units (e.g., individuals) are assigned to treatment groups (e.g., citalopram vs placebo) according to some random process (e.g., a coin flip). The use of randomization helps block the negative effect of confounding variables. For example, suppose that, in our depression study, subjects were <em>not</em> chosen by random, but instead by convenience: we assigned CBT to all University of Colorado Boulder students because they had easy access to talk therapy and CBT; all other individuals in the experiment were not given CBT. In such a case, the effectiveness of CBT is confounded (at least) by education level—it may be that University of Colorado Boulder students, or individuals with some college education respond better to CBT than the general population.</p>
+<p><em>Blocking</em>. Blocking is a technique for including a factor (or factors) in an experiment that lead to undesirable variation in the outcome. In a sense, we are able to control for that variation. In a <em>randomized block design</em>, units are first divided into blocks, and then, within each block, units are randomly assigned levels of the treatment. For example, in our depression study, we might group subjects by their education level—no HS diploma, HS diploma only, bachelor’s degree, master’s degree, terminal graduate degree (e.g., PhD)—and then, within each level, randomly assign CBT.</p>
+<p><em>Replication</em>. Replication is the repetition of an experiment on many different units. In the blocking example above, we might only recruit two subjects at each education level, and within each education level, randomly assign CBT or no CBT. Here, there would be no replication within blocks. However, to derive more reliable estimates of effects, we might recruit several subjects at each education level and randomly assign CBT or no CBT. If a treatment is actually effective, e.g., CBT does reduce depression, then aggregating over replications should reflect that fact; if a treatment is not effective, e.g., CBT does <em>not</em> reduce depression, then replication will guard against coincidences, such as a subject receiving CBT and a reduction in their depression by chance, or for some other reason.</p>
+</section>
+<section id="residual" class="level4" data-number="1.2.2.7">
+<h4 data-number="1.2.2.7" class="anchored" data-anchor-id="residual"><span class="header-section-number">1.2.2.7</span> Residual</h4>
+<blockquote class="blockquote">
+<p>We can learn by trying explanations and then seeing what remains to be explained.–Stephen Stigler <span class="citation" data-cites="Stigler2016">(<a href="#ref-Stigler2016" role="doc-biblioref">Stigler, 2016</a>)</span></p>
+</blockquote>
+<p>Consider again the <code>cars</code> dataset, discussed in the section on regression above. Recall that this dataset gives some measurements of the speed of cars and the distances taken for those cars to stop. We decided that there is an approximately linear relationship between speed (<span class="math inline">\(x\)</span>) and distance (<span class="math inline">\(Y\)</span>): <span class="math inline">\(Y = \beta_0 + \beta_1 x + \varepsilon.\)</span> After fitting the model—i.e., using measured <span class="math inline">\((x,Y)\)</span> pairs to estimate <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>—we might use the model to explain something about stopping distance, or predict stopping distance for a new speed not measured in the original dataset. But how do we know that the model fits well? Is the <em>assumed</em> linear relationship the <em>true</em> relationship between these variables?</p>
+<p>Statisticians answer this question by analyzing the residuals of the model. To define the model residuals, and to understand why they are helpful in assessing fit, let’s decompose the model into two components: a fixed, structural component, given by <span class="math inline">\(f (x; \beta_0, \beta_1) = \beta_0 + \beta_1 x\)</span>, and a random component, given by <span class="math inline">\(\varepsilon\)</span>. We assume that the measurement process is noisy, resulting in random normal errors: <span class="math inline">\(\varepsilon \overset{iid}{\sim} N(0,\sigma^2)\)</span>. Suppose that we took our response variable <span class="math inline">\(Y\)</span>, and subtracted from it the structural part of the model; we’d be left with the error term:</p>
+<p><span id="eq-diff"><span class="math display">\[
+Y - f (x; \beta_0, \beta_1) = \varepsilon
+\tag{1.1}\]</span></span></p>
+<p>So, if we could perform this operation, <span class="math inline">\(Y - f (x; \beta_0, \beta_1)\)</span>, and if we could check that the result were normal, then we would have a sense of whether the model fit well or not; if the structure of the model has been specified correctly, then the distribution of <span class="math inline">\(Y - f (x; \beta_0, \beta_1)\)</span> should be normal, as assumed. But, recall that we do not know <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>, and estimate them from the data; the estimates are denoted <span class="math inline">\(\widehat\beta_0\)</span> and <span class="math inline">\(\widehat\beta_1\)</span>. This estimation changes things. Instead of <a href="#eq-diff" class="quarto-xref">Equation&nbsp;<span>1.1</span></a>, we now have</p>
+<p><span id="eq-resid"><span class="math display">\[
+Y - f (x; \widehat\beta_0, \widehat\beta_1) = \widehat\varepsilon,
+\tag{1.2}\]</span></span></p>
+<p>which is the definition of the residual for this model. How does this help us with assessing fit? Well, we could think of <span class="math inline">\(\widehat\varepsilon\)</span> as an estimate of the error term, <span class="math inline">\(\varepsilon\)</span>, and thus, check the normality of <span class="math inline">\(\widehat\varepsilon\)</span>. <em>If</em> the model is specified correctly, then we should expect that <span class="math inline">\(\widehat\varepsilon\)</span> will be approximately normally distributed. In Figure <a href="#plot:carsresid" data-reference-type="ref" data-reference="plot:carsresid">1.2</a>, we see a <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/qqplot.htm">qqplot</a> of the (standardized) residuals, which is one way of assessing normality. Notice that some points deviate from the line <span class="math inline">\(y = x\)</span>, which suggests that the residuals deviate from normality. This suspicion is further corroborated by Figure <a href="#plot:carsfitted" data-reference-type="ref" data-reference="plot:carsfitted">1.3</a>, where a plot of the (standardized) residuals against fitted values, <span class="math inline">\(\widehat{Y} = f (x; \widehat\beta_0, \widehat\beta_1)\)</span>, shows some structure—a slight downward linear trend—rather than random scatter around <span class="math inline">\(y = 0\)</span>.</p>
+<p>Analyses of the residuals of a statistical model can be a powerful tool in assessing its fit. It can alert practitioners to issues with their given theory—as specified by a statistical model—and can suggest that a simpler or more complicated theory might better explain the phenomena in question.</p>
+<div id="plot:carsresid" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/cars_qq" class="img-fluid figure-img"></p>
+<figcaption>A qqplot of the (standardized) residuals from the linear model fit to the cars dataset. If the residuals are normal, we would expect to see them gather along the solid black line. In this qqplot, we see some deviations for small and large quantiles, suggesting some deviation from normality.</figcaption>
+</figure>
+</div>
+<div id="plot:carsfitted" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/cars_fit_resid" class="img-fluid figure-img"></p>
+<figcaption>A plot of the residuals against fitted values, extracted from the linear model fit to the cars dataset. In this plot, if the model fits correctly, we would expect to see points scattered around the line <span class="math inline">\(y = 0\)</span>, with many points close to <span class="math inline">\(y=0\)</span>, and few points far above or below. In this case, we see a slight downward trend in the points, suggesting that the model is not specified correctly. In addition, we also see higher variation in the residuals at larger fitted values.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="what-is-the-philosophy-of-statistics" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="what-is-the-philosophy-of-statistics"><span class="header-section-number">1.3</span> What is the philosophy of statistics?</h2>
+<p>Now that we have a sense of some important features of philosophy and statistics as distinct disciplines, we are in the position to think about how they might be related. Broadly, there are two ways:</p>
+<p><em>Philosophical issues in statistics</em>. The use of statistics to solve real scientific problems requires, either implicitly or explicitly, certain philosophical commitments. Philosophers of statistics, and philosophically oriented statisticians, are interested in critically evaluating those commitments to decide whether they are justified. Many philosophical commitments receive attention in the practice of statistics and data science. For example, the inability to replicate many scientific results is often blamed on the inherent defectiveness of frequentist statistical methods, such as hypothesis testing <span class="citation" data-cites="Ioannidis2005">(<a href="#ref-Ioannidis2005" role="doc-biblioref">Ioannidis, 2005</a>)</span>. To launch an effective critique of frequentist methods, one must often address the underlying philosophical and logical principles in play. Much of this book will deal with these sorts of issues, that is, philosophical issues that arise in statistics.</p>
+<p><em>Statistical methodologies in philosophy</em>. Many philosophers use statistical tools to attempt to solve important philosophical problems, such as the problem of induction (<a href="ch2.html" class="quarto-xref"><span>Chapter 2</span></a>), scientific theory confirmation, and various problems in the philosophy of mind. Of course, attempts to utilize, for example, Bayesian tools to solve problems in scientific confirmation theory, may run into broad objections about the Bayesian tools themselves; so, the sorts of issues that arise in (1) are relevant here. We end this chapter by briefly considering an example from both (1) and (2).</p>
+<section id="philosophy-in-statistics" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="philosophy-in-statistics"><span class="header-section-number">1.3.1</span> Philosophy in statistics</h3>
+<p>The relationship between breast cancer and behaviors such as smoking and alcohol consumption has been studied extensively. In 2002, a report published in <em>Lancet</em> claimed that moderate drinking was not associated with a higher risk of breast cancer. With respect to smoking, the report found that premenopausal women who smoke had an increased risk of breast cancer, but that postmenopausal women had a significantly reduced risk of breast cancer <span class="citation" data-cites="Band2002">(<a href="#ref-Band2002" role="doc-biblioref">Band et al., 2002</a>)</span>. Months later, in a report published in <em>The British Journal of Cancer</em>, a different group of researchers concluded that, <em>in women who reported drinking no alcohol</em>, smoking was not associated with breast cancer, and go on to conclude that “smoking has little or no independent effect on the risk of developing breast cancer” <span class="citation" data-cites="Hamajima2002">(<a href="#ref-Hamajima2002" role="doc-biblioref">Hamajima et al., 2002</a>)</span>.</p>
+<p>Both reports used <em>observational</em>, rather than <em>experimental</em>, data. In an observational study, researchers do not manipulate any variables or impose any treatments.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> In particular, both reports mentioned above made use of a type of observational study called a <em>case-control</em> study. Studies of this sort identify the <em>case</em>, i.e., a group known to have an outcome. In these studies above, groups of women with breast cancer constituted the case. Then, <em>controls</em> are identified, i.e., a group known to be free of the outcome. Many variables are measured within each group. The goal of a case-control study is to look back in time to determine associations between the outcome and other variables (e.g., breast cancer and smoking) <span class="citation" data-cites="Lewallen1998">(<a href="#ref-Lewallen1998" role="doc-biblioref">Lewallen &amp; Courtright, 1998</a>)</span>.</p>
+<p>In the <span class="citation" data-cites="Band2002">Band et al. (<a href="#ref-Band2002" role="doc-biblioref">2002</a>)</span> study, a questionnaire was sent to 1431 women under 75 years old with breast cancer; these women were listed on the population-based British Columbia cancer registry between June 1, 1988, and June 30, 1989. Questionnaires were also sent to 1502 age-matched controls, randomly selected from the 1989 British Columbia voters list. A subset of 318 and 340, respectively, replied. Researchers assessed the effects of alcohol consumption and smoking (separately for premenopausal and postmenopausal women), and adjusted for confounding variables <span class="citation" data-cites="Band2002">(<a href="#ref-Band2002" role="doc-biblioref">Band et al., 2002</a>)</span>. The <span class="citation" data-cites="Hamajima2002">Hamajima et al. (<a href="#ref-Hamajima2002" role="doc-biblioref">2002</a>)</span> study is a <em>meta-analysis</em>, which combined data from many studies of the type conducted in <span class="citation" data-cites="Band2002">Band et al. (<a href="#ref-Band2002" role="doc-biblioref">2002</a>)</span>.</p>
+<p>The results from the two reports are, at least on their surface, in tension (if not, outright in contradiction) with one another: one suggests that smoking is a risk factor for breast cancer; another suggests that smoking is not a risk factor if we “control” for alcohol consumption (e.g., there may be an interaction between alcohol consumption and smoking). One practical implication of this tension is that, if one were to attempt to make behavioral changes based on these studies, it’s not clear what behaviors ought to be adopted. The correct adoption of a particular behavior depends on, among other factors, the reliability of the statistical analyses used, and there are a number of conceptual issues that bear on the reliability of these analyses. Many of these conceptual issues, while related to empirical content, are not empirical in and of themselves, and thus, I count them as philosophical. Some important philosophical issues that arise are:</p>
+<p><em>How does using a meta-analysis strengthen the inductive support of the conclusions being drawn?</em> It is often thought that combining several studies together into a meta-analysis can “create a single, more precise estimate of an effect” <span class="citation" data-cites="Hoffman2015 Ferrer1998">(<a href="#ref-Ferrer1998" role="doc-biblioref">Ferrer, 1998</a>; <a href="#ref-Hoffman2015" role="doc-biblioref">Hoffman, 2015</a>)</span>. A correctly performed meta-analysis that creates a more precise estimate of an effect would increase the inductive support of the conclusion being drawn; but in practice, few meta-analyses meet all the criteria for correctness, and thus, the inductive support provided by meta-analyses can be weak <span class="citation" data-cites="Hoffman2015 Ioannidis2010">(<a href="#ref-Hoffman2015" role="doc-biblioref">Hoffman, 2015</a>; <a href="#ref-Ioannidis2010" role="doc-biblioref">Ioannidis, 2010</a>)</span>. Assessing the strength that a meta-analysis brings to a statistical argument is logical, and thus, philosophical, in nature.</p>
+<p><em>How does each study avoid, or fail to avoid, data dredging?</em> Data dredging is a set of fallacious procedures that result in claimed associations when, in fact, no associations exist. One popular type of data dredging is post hoc multiple comparisons, which arises when many claims are tested simultaneously, after the data have been collected. When a large number of claims are tested without adjustments being made to the testing procedures, the large majority of findings will be inadequately supported, i.e., they will be false positives <span class="citation" data-cites="Smith2002">(<a href="#ref-Smith2002" role="doc-biblioref">Smith, 2002</a>)</span>. But there is no universally agreed upon method for adjusting testing procedures for multiple comparisons. In choosing a particular method, one is advancing (either explicitly or implicitly) a set of <em>values</em>, e.g., conservatism about avoiding a particular type of error. We will revisit this issue in <span class="quarto-unresolved-ref">?sec-frequentist</span>.</p>
+<p><em>Does the fact that only a subset of chosen subjects respond to a questionnaire impact the conclusions being drawn?</em> Even if the original group sent the questionnaire was randomly chosen, the subset of actual respondents is likely not a random sample from the desired population. If questionnaire response is correlated with a confounding variable, conclusions drawn will be weakly supported.</p>
+<p><em>Even if the associations discovered are real, what can we conclude about causal relationships?</em> The strength of support lent to causal conclusions based on analyses of observational studies is disputed. Some argue that “case-control studies may prove an association but they do not demonstrate causation” <span class="citation" data-cites="Lewallen1998">(<a href="#ref-Lewallen1998" role="doc-biblioref">Lewallen &amp; Courtright, 1998</a>)</span>. Others argue that causal conclusions <em>can</em> be drawn from case-control studies and, more broadly, observational studies <span class="citation" data-cites="Persson2013">(<a href="#ref-Persson2013" role="doc-biblioref">Persson &amp; Waernbaum, 2013</a>)</span>. Further, among those who believe that observational studies can support causal conclusions, there is disagreement as to which methods provide the strongest inductive argument <span class="citation" data-cites="Gelman2009 Pearl2009">(<a href="#ref-Gelman2009" role="doc-biblioref">Gelman, 2009</a>; <a href="#ref-Pearl2009" role="doc-biblioref">Pearl, 2009</a>)</span></p>
+</section>
+<section id="sec:statphil" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="sec:statphil"><span class="header-section-number">1.3.2</span> Statistics in philosophy</h3>
+<p>There are several areas of philosophy that make use of statistical methodology in advancing solutions to philosophical problems. One example is in scientific confirmation theory. Generally, given a scientific theory <span class="math inline">\(T\)</span>, scientists use empirical evidence to attempt to confirm or refute <span class="math inline">\(T\)</span>. As a simple example, consider the ‘scientific theory’ <span class="math inline">\(T\)</span>: <em>All ravens are black.</em> How might one confirm or refute <span class="math inline">\(T\)</span>? Immediately, we notice that there is an asymmetry; to refute <span class="math inline">\(T\)</span>, one only needs to observe a single non-black raven. However, to conclusively confirm <span class="math inline">\(T\)</span>, one needs to show that <em>all ravens, even those yet to be observed</em> are black. That is a much harder task. But, suppose that many, many ravens have been observed, and all of them have been black. Does this add some confirmatory support to <span class="math inline">\(T\)</span>? Intuitively, it does, and Bayesian confirmation theorists have made attempts to formalize this intuition by quantifying the degree to which new observations consistent with a theory <span class="math inline">\(T\)</span> actually confirm <span class="math inline">\(T\)</span>.</p>
+<p>Let’s consider one simple attempt at a Bayesian confirmation theory. Let <span class="math inline">\(x\)</span> be a new observation; some have proposed that a theory <span class="math inline">\(T\)</span> is confirmed by <span class="math inline">\(x\)</span> just in case the probability of the theory given the new observation is greater than the probability of the theory without the observation <span class="citation" data-cites="Mayo2018">(<a href="#ref-Mayo2018" role="doc-biblioref">Mayo, 2018</a>)</span>:</p>
+<p><span id="eq-bboost"><span class="math display">\[
+P(\, T \, | \, x) &gt; P(T).
+\tag{1.3}\]</span></span></p>
+<p>In <a href="#eq-bboost" class="quarto-xref">Equation&nbsp;<span>1.3</span></a>, <span class="math inline">\(P(T)\)</span> is the <em>prior probability</em> that the theory is true, and <span class="math inline">\(P(\, T \, | \, x)\)</span> is the posterior probability that the theory is true, given the observed evidence, <span class="math inline">\(x\)</span>. The posterior probability can (at least in theory!) be computed using Bayes’ theorem: <span id="eq-bayes1"><span class="math display">\[
+P(\, T \, | \, x)  = \frac{P(\, x \, | \, T)P(T)}{P(x)} .
+\tag{1.4}\]</span></span></p>
+<p>This view of confirmation theory raises many questions. Ostensibly, theories are either true of false, i.e., they are assigned uninteresting probabilities: either zero or one. So, does it make sense to assign non-zero and non-unit probabilities to theories? What could that probability mean? Further, what does it mean to assign a prior probability to a theory, i.e., <span class="math inline">\(P(T)\)</span>? If we have no evidence bearing on that theory, then what probability should we assign to it (we need <em>some</em> prior to use Bayes’ theorem!)? Finally, as <span class="citation" data-cites="Mayo2018">Mayo (<a href="#ref-Mayo2018" role="doc-biblioref">2018</a>)</span> suggests, <a href="#eq-bboost" class="quarto-xref">Equation&nbsp;<span>1.3</span></a>, while intuitively plausible, has its problems and rival proposals. For example, we might say that <span class="math inline">\(T\)</span> is confirmed by <span class="math inline">\(x\)</span> just in case the probability of the theory given the new observation is high in some absolute sense, at least greater than the negation of that theory given the new observation:</p>
+<p><span id="eq-aboost"><span class="math display">\[
+P(\, T \, | \, x) &gt; P(\, \neg T \, | \, x).
+\tag{1.5}\]</span></span></p>
+<p><a href="#eq-bboost" class="quarto-xref">Equation&nbsp;<span>1.3</span></a> and <a href="#eq-aboost" class="quarto-xref">Equation&nbsp;<span>1.5</span></a> provide different accounts of theory confirmation. How can we decide between the two? Formal epistemologists use statistical (especially Bayesian) tools to work on these issues.</p>
+<p>The goal of this chapter has been to provide a shared framework to think through important issues in the philosophy of statistics. We saw that philosophy is rooted in a shared commitment to providing reasons for particular views about the world, and has a close historical connection to the sciences. Philosophers often care about empirical content, but often, the arguments that they advance depend on concepts (e.g., values, metaphysical commitments) that go beyond empirical content. We also saw that (inferential) statistics can be thought of as a set of inductive methods used to draw general conclusions about the world from limited information. In remaining chapters, we will compare, contrast, and explore the inductive strength of particular statistical methodologies.</p>
+<p>We continue in the next chapter by expanding upon the inductive nature of statistics. What is induction, and what forms can it take? What are some general principles that make statistical methodologies strong, in the inductive sense? Do any of the competing statistical methodologies provide solution to the longstanding philosophical problem of induction?</p>
+</section>
+</section>
+<section id="discussion-questions" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">1.4</span> Discussion Questions</h2>
+<p>What is a reasonable working definition of philosophy? Of statistics?</p>
+<p>Describe some ways in which academic philosophy differs from “personal philosophies”.</p>
+<p>What are some important issues that arise in the philosophical study of logic? Metaphysics? Epistemology? Ethics? Philosophy of Statistics?</p>
+<p>What is the verifiability criterion of meaning? What are some problems with this criterion? What bearing does this have on metaphysics as a discipline?</p>
+<p>In the discussion of hypothesis testing in Section <a href="#sec:likelihood" data-reference-type="ref" data-reference="sec:likelihood">1.2.2.3</a>, we reasoned as follows: we might act as if a hypothesis is false if, under that hypothesis, the data in hand are improbable. Is this strong reasoning? Can we think of an example in which it is not?</p>
+<p>What is the relationship between philosophy and science?</p>
+<p>In what sense do the “pillars of statistical wisdom" provide a definition of statistics?</p>
+<p>What is the relationship between philosophy and statistics?</p>
+<p>Fisher writes, “Nature...will best respond to a logical and carefully thought out questionnaire; indeed, if we ask her a single question, she will often refuse to answer until some other topic has been discussed.” What does he mean by “asking nature a single question”, and how might doing so not be optimal?</p>
+<p>What is the difference between an observational study and an experiment? For what reasons might we prefer the former?</p>
+<p>Describe some interesting issues that arise in Bayesian confirmation theory. For example, Bayesians assign probability values to theories. Is that coherent?</p>
+<p>Which “confirmation theory” given in Section <a href="#sec:statphil" data-reference-type="ref" data-reference="sec:statphil">1.3.2</a> do you prefer and why?</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-apa_undergraduates" class="csl-entry" role="listitem">
+American Philosophical Association. (2024). <em>Philosophy resources for undergraduate students</em>. <a href="https://www.apaonline.org/page/undergraduates">https://www.apaonline.org/page/undergraduates</a>
+</div>
+<div id="ref-Band2002" class="csl-entry" role="listitem">
+Band, P. R., Le, N. D., Fang, R., &amp; Deschamps, M. (2002). Carcinogenic and endocrine disrupting effects of cigarette smoke and risk of breast cancer. <em>The Lancet</em>, <em>360</em>(9339), 1044?1049. <a href="https://doi.org/10.1016/s0140-6736(02)11140-8">https://doi.org/10.1016/s0140-6736(02)11140-8</a>
+</div>
+<div id="ref-cahan2003" class="csl-entry" role="listitem">
+Cahan, D. (2003). <em>From natural philosophy to the sciences: Writing the history of nineteenth-century science</em>. The University of Chicago Press.
+</div>
+<div id="ref-cohon2018" class="csl-entry" role="listitem">
+Cohon, R. (2018). Hume’s moral philosophy. In <em>Stanford Encyclopedia of Philosophy</em>. <a href="https://plato.stanford.edu/entries/hume-moral/#io">https://plato.stanford.edu/entries/hume-moral/#io</a>
+</div>
+<div id="ref-Curd2016" class="csl-entry" role="listitem">
+Curd, P. (2016). Presocratic philosophy. In <em>Stanford Encyclopedia of Philosophy</em>. <a href="https://plato.stanford.edu/entries/presocratics/">https://plato.stanford.edu/entries/presocratics/</a>
+</div>
+<div id="ref-czitrom1999" class="csl-entry" role="listitem">
+Czitrom, V. (1999). One-factor-at-a-time versus designed experiments. <em>The American Statistician</em>, <em>53</em>(2), 126?131. <a href="https://doi.org/10.1080/00031305.1999.10474445">https://doi.org/10.1080/00031305.1999.10474445</a>
+</div>
+<div id="ref-Davenport2012" class="csl-entry" role="listitem">
+Davenport D.J, T. H., Patil, McAfee, A., &amp; Brynjolfsson, E. (2012). Data scientist: The sexiest job of the 21st century. In <em>Harvard Business Review</em>. <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century</a>
+</div>
+<div id="ref-dphil2009" class="csl-entry" role="listitem">
+Dphil, M. S. (2009). Meaning (verification theory). <em>Encyclopedia of Neuroscience</em>, 2253?2256. <a href="https://doi.org/10.1007/978-3-540-29678-2_3346">https://doi.org/10.1007/978-3-540-29678-2_3346</a>
+</div>
+<div id="ref-gizmodo2014tyson" class="csl-entry" role="listitem">
+Dvorsky, G. (2014). <em>Neil deGrasse tyson slammed for dismissing philosophy as useless</em>. <a href="https://archive.ph/FHurA">https://archive.ph/FHurA</a>
+</div>
+<div id="ref-Ferrer1998" class="csl-entry" role="listitem">
+Ferrer, R. L. (1998). Graphical methods for detecting bias in meta-analysis. <em>FAMILY MEDICINE-KANSAS CITY-</em>, <em>30</em>, 579–583.
+</div>
+<div id="ref-fetzer2010carl" class="csl-entry" role="listitem">
+Fetzer, J. (2010). <em>Carl hempel</em>.
+</div>
+<div id="ref-Fisher1935" class="csl-entry" role="listitem">
+Fisher, R. A. (1935). <span class="nocase">The design of experiments. 1935</span>. In <em>Oliver &amp; Boyd Edinburgh, Scotland</em>. Oliver; Boyd.
+</div>
+<div id="ref-Gelman2009" class="csl-entry" role="listitem">
+Gelman, A. (2009). Resolving disputes between j. Pearl and d. Rubin on causal inference. In <em>Statistical Modeling, Causal Inference, and Social Science:</em> <a href="https://statmodeling.stat.columbia.edu/2009/07/05/disputes_about/">https://statmodeling.stat.columbia.edu/2009/07/05/disputes_about/</a>
+</div>
+<div id="ref-Hamajima2002" class="csl-entry" role="listitem">
+Hamajima, N., Hirose, K., Tajima, K., Rohan, T., Calle, E., Heath, C., &amp; Coates, R. (2002). Alcohol, tobacco and breast cancer—collaborative reanalysis of individual data from 53 epidemiological studies, including 58 515 women with breast cancer and 95 067 women without the disease. <em>British Journal of Cancer</em>, <em>87</em>(11), 1234?1245. <a href="https://doi.org/10.1038/sj.bjc.6600596">https://doi.org/10.1038/sj.bjc.6600596</a>
+</div>
+<div id="ref-hawking2010grand" class="csl-entry" role="listitem">
+Hawking, S., &amp; Mlodinow, L. (2010). <em>The grand design</em>. Bantam Books.
+</div>
+<div id="ref-Hoffman2015" class="csl-entry" role="listitem">
+Hoffman, J. I. E. (2015). Chapter 36 - meta-analysis. In J. I. E. Hoffman (Ed.), <em>Biostatistics for medical and biomedical practitioners</em> (pp. 645–653). Academic Press. https://doi.org/<a href="https://doi.org/10.1016/B978-0-12-802387-7.00036-6">https://doi.org/10.1016/B978-0-12-802387-7.00036-6</a>
+</div>
+<div id="ref-ichikawa2017" class="csl-entry" role="listitem">
+Ichikawa, J. J., &amp; Steup, M. (2017). The analysis of knowledge. In <em>Stanford Encyclopedia of Philosophy</em>. <a href="https://plato.stanford.edu/archives/sum2018/entries/knowledge-analysis/">https://plato.stanford.edu/archives/sum2018/entries/knowledge-analysis/</a>
+</div>
+<div id="ref-Ioannidis2010" class="csl-entry" role="listitem">
+Ioannidis, J. P. (2010). Meta-research: The art of getting it wrong. <em>Research Synthesis Methods</em>, <em>1</em>(3-4), 169–184.
+</div>
+<div id="ref-Ioannidis2005" class="csl-entry" role="listitem">
+Ioannidis, J. P. A. (2005). Why most published research findings are false. <em>PLoS Medicine</em>, <em>2</em>(8). <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a>
+</div>
+<div id="ref-jackson2016beck" class="csl-entry" role="listitem">
+Jackson-Koku, G. (2016). Beck depression inventory. <em>Occupational Medicine</em>, <em>66</em>(2), 174–175.
+</div>
+<div id="ref-jobs2005commencement" class="csl-entry" role="listitem">
+Jobs, S. (2005). <em>Stanford commencement address</em>. <a href="https://news.stanford.edu/2005/06/14/jobs-061505/" class="uri">https://news.stanford.edu/2005/06/14/jobs-061505/</a>.
+</div>
+<div id="ref-Lewallen1998" class="csl-entry" role="listitem">
+Lewallen, S., &amp; Courtright, P. (1998). Epidemiology in practice: Case-control studies. In <em>Community eye health</em>. International Centre for Eye Health. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1706071/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1706071/</a>
+</div>
+<div id="ref-Mayo2018" class="csl-entry" role="listitem">
+Mayo, D. G. (2018). <em>Statistical inference as severe testing: How to get beyond the statistics wars</em>. Cambridge University Press.
+</div>
+<div id="ref-McAllister2018" class="csl-entry" role="listitem">
+McAllister, T. (2018). Sam harris and the is/ought gap. In <em>LessWrong 2.0</em>. <a href="https://www.lesswrong.com/posts/HLJGabZ6siFHoC6Nh/sam-harris-and-the-is-ought-gap">https://www.lesswrong.com/posts/HLJGabZ6siFHoC6Nh/sam-harris-and-the-is-ought-gap</a>
+</div>
+<div id="ref-meisner2019" class="csl-entry" role="listitem">
+Meisner, R. C. (2019). Ketamine for major depression: New tool, new questions. In <em>Harvard Health Blog</em>. <a href="https://www.health.harvard.edu/blog/ketamine-for-major-depression-new-tool-new-questions-2019052216673">https://www.health.harvard.edu/blog/ketamine-for-major-depression-new-tool-new-questions-2019052216673</a>
+</div>
+<div id="ref-Morris2019" class="csl-entry" role="listitem">
+Morris, W. E., &amp; Brown, C. R. (2019). David hume. In <em>Stanford Encyclopedia of Philosophy</em>. <a href="https://plato.stanford.edu/entries/hume/">https://plato.stanford.edu/entries/hume/</a>
+</div>
+<div id="ref-Papineau2018" class="csl-entry" role="listitem">
+Papineau, D. (2018). Is philosophy simply harder than science? In <em>TheTLS</em>. The Times Literary Supplement. <a href="https://www.the-tls.co.uk/articles/public/philosophy-simply-harder-science/">https://www.the-tls.co.uk/articles/public/philosophy-simply-harder-science/</a>
+</div>
+<div id="ref-park2020progress" class="csl-entry" role="listitem">
+Park, J. (2020). <em>On the question of progress in philosophy</em>. <span>Epoche Magazine</span>. <a href="https://epochemagazine.org/20/on-the-question-of-progress-in-philosophy/">https://epochemagazine.org/20/on-the-question-of-progress-in-philosophy/</a>
+</div>
+<div id="ref-Pearl2009" class="csl-entry" role="listitem">
+Pearl, J. (2009). <em>Myth, confusion, and science in causal analysis</em>.
+</div>
+<div id="ref-Persson2013" class="csl-entry" role="listitem">
+Persson, E., &amp; Waernbaum, I. (2013). Estimating a marginal causal odds ratio in a case-control design: Analyzing the effect of low birth weight on the risk of type 1 diabetes mellitus. <em>Statistics in Medicine</em>, <em>32</em>(14), 2500–2512. <a href="https://doi.org/10.1002/sim.5826">https://doi.org/10.1002/sim.5826</a>
+</div>
+<div id="ref-Skorton2018" class="csl-entry" role="listitem">
+Skorton, D. J., &amp; Bear, A. (2018). <em>The integration of the humanities and arts with sciences, engineering, and medicine in higher education: Branches from the same tree</em>. The National Academies Press.
+</div>
+<div id="ref-Smith2002" class="csl-entry" role="listitem">
+Smith, G. D. (2002). Data dredging, bias, or confounding. <em>Bmj</em>, <em>325</em>(7378), 1437?1438. <a href="https://doi.org/10.1136/bmj.325.7378.1437">https://doi.org/10.1136/bmj.325.7378.1437</a>
+</div>
+<div id="ref-Stigler2016" class="csl-entry" role="listitem">
+Stigler, S. M. (2016). <em>The seven pillars of statistical wisdom</em>. Harvard University Press.
+</div>
+<div id="ref-ward2017" class="csl-entry" role="listitem">
+Ward, J., Williams, J., &amp; Manchester, S. (2017). 111 n.f.l. Brains. All but one had c.t.e. In <em>The New York Times</em>. The New York Times. <a href="https://www.nytimes.com/interactive/2017/07/25/sports/football/nfl-cte.html?_r=0">https://www.nytimes.com/interactive/2017/07/25/sports/football/nfl-cte.html?_r=0</a>
+</div>
+<div id="ref-philosophynow_what_2009" class="csl-entry" role="listitem">
+What is philosophy and how do we do it? (2009). <em>Philosophy Now</em>, (79). <a href="https://archive.ph/dPS9D">https://archive.ph/dPS9D</a>
+</div>
+<div id="ref-Wittgenstein2001" class="csl-entry" role="listitem">
+Wittgenstein, L. (2001 (1953)). <em>Philosophical investigations</em>. Blackwell Publishing.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Pearson, K. (1880). <em>The New Werther</em>. London: Edward Arnold.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Andersen, R. (2012, April 23). <em>Has physics made philosophy and religion obsolete?</em> The Atlantic. <a href="https://archive.ph/0sbZe" class="uri">https://archive.ph/0sbZe</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Of course, most arguments used in philosophy and science are much more complicated complex than the structure given above—two premises and a conclusion. We focus on these simple arguments to make a conceptual point.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Of course, some positivists had answers to this criticism, but none are widely accepted. Again, see https://bit.ly/2zikTyH, page 345.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>We will consider the problem of theory-ladenness in more detail in <a href="#ch:in-practice" data-reference-type="ref+label" data-reference="ch:in-practice">[ch:in-practice]</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>There is an extensive literature on necessary and sufficient conditions for knowledge; most contemporary philosophers believe that truth, justification, and belief are necessary conditions for knowledge, but not sufficient conditions. See Section 3 of <span class="citation" data-cites="ichikawa2017">Ichikawa &amp; Steup (<a href="#ref-ichikawa2017" role="doc-biblioref">2017</a>)</span> for more.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>The same David Hume that worried about the existence of causality also argued that one cannot derive an ought from an is; see <span class="citation" data-cites="cohon2018">Cohon (<a href="#ref-cohon2018" role="doc-biblioref">2018</a>)</span>. Most philosophers agree. The neuroscientist and philosopher Sam Harris is one exception. See <span class="citation" data-cites="McAllister2018">McAllister (<a href="#ref-McAllister2018" role="doc-biblioref">2018</a>)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>A simple example of such a model is simple linear regression, where <span class="math inline">\(f(x_i; \boldsymbol\theta) = \theta_1 + \theta_2 x_i\)</span> and <span class="math inline">\(\varepsilon_i \sim N(0, \sigma^2)\)</span>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><a href="https://bit.ly/31Gphnd" class="uri">https://bit.ly/31Gphnd</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>We suppose that each person’s guess would be correct, up to some random error or perturbation. Another way of saying this is that, if we could somehow ask each person to give an estimate, record it, erase their memory, and repeat this process many times, on average, they would be correct. Further, we suppose that the random error (i.e., the standard deviation of each guess) is the same across all people.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Can you derive what <span class="math inline">\(sd(\bar{X})\)</span> should be, assuming that the covariance between the <span class="math inline">\(i^{th}\)</span> and <span class="math inline">\(j^{th}\)</span> guess is <span class="math inline">\(Cov(X_i, X_j) = \sigma_{i,j}\)</span>?<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Can you calculate it?<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Does this reasoning sound strong? Some think it is not, as we will see in <span class="quarto-unresolved-ref">?sec-frequentist</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>What is the variable of interest in this example?<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Other population parameters in this context might be <span class="math inline">\(p =\)</span> the proportion of words per page under four letters in this book, or <span class="math inline">\(\sigma =\)</span> the standard deviation of the length of words in this book.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>For a rigorous set of answers to this question, take a course in mathematical statistics!<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>In addition, it might be nice to know things like (1) the shape of the distribution of <span class="math inline">\(\bar{X}\)</span>, and (2) what happens to <span class="math inline">\(\bar{X}\)</span> as <span class="math inline">\(n \to \infty\)</span>.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>https://www.r-project.org<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Which are equivalent when <span class="math inline">\(\varepsilon_i \overset{iid}{\sim}N(0,\sigma^2)\)</span>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>See <span class="citation" data-cites="meisner2019">Meisner (<a href="#ref-meisner2019" role="doc-biblioref">2019</a>)</span> for information about this new treatment for depression.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>As long as we have no reason to believe that this would be harmful or unethical.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Reasons for not controlling for variables or imposing treatments may be logistical—i.e., it would be costly, or impossible—or ethical.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch2.html" class="pagination-link" aria-label="Contextualizing statistics">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Contextualizing statistics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

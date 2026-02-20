@@ -1,0 +1,117 @@
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+\chapter*{Preface}
+\begin{chapquote}{T.S. Eliot, \textit{Little Gidding}}
+We shall not cease from exploration 
+
+And the end of all our exploring 
+
+Will be to arrive where we started 
+
+And know the place for the first time.
+\end{chapquote}
+
+
+%\section{Motivation}
+%Idea: different levels of justification---this book is mean to provide justifications at various levels, including philosophical and mathematical. In my view, the philosophical is the most important, because it concerns the actual concepts we (should) care about, and the connection between those concepts. Mathematics then becomes a tool for operationalizing, analyzing, and connecting those concepts. In some places, to some readers, the math might seem overwhelming. Often, but not always, it's OK to skip the math, noting that the math serves as the connective tissue between concepts...
+
+%The value of the state of aporia...present an idea or method, present objections, present replies. In many of these cases, it's not clear where we go (frequentist vs Bayes, definitions of causality). But it is undoubtedly helpful to be in a state of confusion, and to have considered the strongest possible arguments and objections for all available positions. What does this suggest about what we do in practice?
+%
+
+%\section{The rise of data science and artificial intelligence}
+I began writing this book in 2018. At that time, data science was a relatively new field and data science degree programs were just beginning to emerge. Pioneering data science programs at University of California Berkeley and New York University emerged in the 2010s; the Statistics and Data Science major at the University of Colorado Boulder (CU Boulder)---my home institution at the time of this writing---launched in 2018, with the launch of the MS in Data Science in fall 2021. 
+
+ At CU Boulder, like most universities, statistics---alongside computing and domain knowledge---is one of three foundational pillars of data science programs. Thus, the explosion of data science meant an explosion in the engagement with, and application of, statistical methods. But use of statistics does not equate to {\it correct use} of statistics. The rise of data science correlated with a rise of various misinterpretations and misuses of statistics. One goal of this book is to help statistics and data science students engage with statistical concepts and reasoning on a deeper level, to distinguish between correct and incorrect uses of statistics. 
+ 
+That ``deeper level'' is not always present in statistics education. Statistics courses often cover methods and ``recipes'' for producing inferences. Better, but still not sufficient, some statistics courses are mathematically rigorous. But, in my view, it is much less common that statistics courses engage in the philosophical, conceptual, and inferential underpinnings clearly threaded through the discipline. I believe it is this kind of engagement that makes one a stronger statistical thinker, and user of statistics.
+
+As a pillar of data science, statistics is of instrumental value. Statistics helps practitioners---scientists, domain experts---answer research and business questions. Now, in the age of AI, where methods and ``recipes'' can be automated, it's worth considering whether statistics has some deeper, intrinsic value. Why study statistics if computers can deploy methods on our behalf? I believe that there is still value in studying statistics. Statistics is about inference. And to infer is deeply human. As a human endeavor, inference is messy. Philosophers and statisticians are in deep disagreement about the nature of inference; about how we go from ``what?'' to ``why?'' \citep{pearl_mackenzie_2018}. A deeper study and engagement with philosophical questions may help us gain clarity on the nature of inference. It may help us ``arrive where we started'' in our statistics journeys, and ``know the place for the first time.''
+
+%Given that statistics is such a fundamental component of data science, a statistics major or master's degree is still in high demand. In learning statistics---alongside other skills like programming and databases---students gain a foundation for data science roles. As more and more data science programs launched, arguably, statistics has become a servant of data science. And even more recently, many data science tasks are being---or are projected to be---performed by AI \citep{wang2019human, akimov2025ai}. In light of these trends, why should we care about the philosophy of statistics? Even worse, why read an entire {\it book} on this topic? AI may just do the hard work for us.
+
+%In the final years of writing this book---2024 and 2025---I thought a lot about these questions. One answer is: curiosity. It's good to be curious. Philosophical topics can be intrinsically interesting (they certainly are to me!). But I also think that there are other, instrumental answers to these questions about why we ought to engage in the philosophy of statistics. Although AI will take on many of our tasks, there will always be a need to check and and validate AI. AI can be wrong. It hallucinates \citep{kalai2025language, shumailov2024ai}. In July 2025, as a guest on the Ezra Klein show, Kyla Scanlon articulated this answer very well \citep{scanlon_attention_2025}:
+%
+%“I think truth is really valuable. It's the most important commodity of the present moment. And it's something that is increasingly scarce. Once you lose it, it's very difficult to regain it. And so I think AI is going to create a lot of information and a lot of noise. And it'll be increasingly important for people to be able to sort the truth out from that...AI does hallucinate quite a bit. If you've ever talked to [an AI], it does make stuff up. And you can be like, hey, you made that up. And it'll correct itself. But you still have to be able to source like what the truth is and what that means.”
+%
+%More than anything, I believe that this book can provide a strong foundation for sorting through ``information and noise'', whether produced by AI, corporate interests, misguided science, etc. 
+%%It would be nice to give a short history/bio describing how I got to study philstat. Maybe some key events:
+%%
+%\subsection{The replication crisis}
+%The replication crisis as a motivator for writing this book...
+
+%
+%\section{My journey to phil stat}
+%In senior year of high school (2003), I took an intro to Philosophy course. It was a broad overview of the history of philosophy (from Plato to Sartre). Mrs. Cathy Pentola was formative for me. She was curious and exciting. She made it feel like ideas mattered. This was my first experience with philosophy, and is not typical for US students.
+%
+%I wasn't sure what I wanted to major in, and I did well on the math regents exam, so I decided to major in math. Stony Brook had both a ``pure'' math department and an applied math department. I was in the pure math department. I thought there was something edgy to being a pure math major. 
+%
+%I took philosophy courses, and slowly built up a major
+%
+%interested in existentialism mainly; with only a secondary interest in philosophy of math
+%
+%I took one course in probability theory. I think I got a B. Statistics was not on my radar at all.
+%
+%I hadn't read Heidegger, but knew of his influence on Sartre, so I was determined to try to read Heidegger.
+%Discovered Hubert Dreyfus' podcasts on Being and Time and started listening.
+%
+%Took a seminar on Kierkegaard with Peter Manchester. I remember him saying that he was deciding between becoming a mathematician or a philosopher, and learning that mathematicians peak in their 20s and philosophers in their 60s, so he went with philosophy.
+%
+%Had one semester gap between graduation and starting AmeriCorps, and so wanted to take a course or two to fill that gap.
+%
+%Enrolled in a graduate-level abstract algebra course and a special topics course on postmodernism. The former absolutely kicked my ass (I think I failed but somehow argued to retake an exam and got a C?). The latter was labeled incorrectly, and was really a course on Heidegger's Being and Time, taught by Tim Hyde. I loved it. This experience suggested to me that I had more of an aptitude for philosophy than math. 
+%
+%I went to AmeriCorps to work on a wildland firefighting crew. I loved it, but knew that I wouldn't be fulfilled without steady engagement with ideas. So I applied to graduate school in philosophy. I was admitted to PhD program at the University of South Carolina in 2009. I spent two years there trying to learn about Heidegger---and succeeding, but mainly because of side reading and discussions with my good friend Michael Glawson. I remember presenting a paper on Heidegger at the South Carolina Society for Philosophy (check name?). Afterward, i was approached by someone asking me what I thought of Heidegger on X, Y, and Z. He was very curious. He turned out to be Julian Young, a distinguished Heidegger scholar (working at ...). We kept in touch, and when Young had Dreyfus visit to give a lecture, and Michael and I got to have dinner with him. This all accelerated me in the direction of moving toward continental philosophy. 
+%
+%Instead of learning about continental philosophy at USC, I was learning about the history of philosophy, philosophy of science, and the philosophy of statistics (though I didn't know it by that name at the time). In my first semester, I was a teaching assistant for a course in inductive logic, under Michael Dickson. This course fulfilled a math requirement for arts and science majors, and was basically a statistics course, but centered fundamental issues in inference, interpretations of probability, paradoxes, Bayesian thinking, etc. I didn't know that statistics could be so philosophically rich. But I still didn't realize that this was something I really wanted to study.
+%
+%At the same time, I was also learning more about the divide between continental and analytic philosophy. Stony Brook's primarily focus areas were continental. USC had some late career faculty in continental philosophy (Jeremiah Hacket, Walullis), but was hiring in ethics and philosophy of science. I made one last push to study continental philosophy, applying to schools with a strong reputation in Heidegger studies. At the same time, some faculty at USC were making one last push for me to put my math background to use in a dissertation on philosophy of applied mathematics and science. Why do you care about Dostoevsky; that's not philosophy!
+%
+%Knowing the economy and job market for philosophers, I also decided that, in addition to several top tier continental philosophy PhD programs, I would apply to two applied math PhD programs. These were safety schools, so that if I didn't get into my reach schools in philosophy, I'd have a more ``practical'' path forward. As luck would have it, I wasn't granted admission to any schools in philosophy, but was offered the opportunity to study applied math at the Colorado School of Mines. Back to Colorado.
+%
+%Colorado School of Mines is an engineering school, with only a handful of faculty working in the humanities. The two philosophers at Mines, Carl Mitcham and Sandy Woodson, were very accepting of me, and I was able to teach courses in their humanities group. I learned a lot about how to teach philosophy to STEM students. 
+%
+%More luck: meeting Mark Campanelli for an applied statistics project at NREL. Mark helped me think philosophically in the context of a real and difficult problem. I switched to the statistics specialization for my PhD and learned a lot more about statistics, including how faculty think about the philosophical differences. For example, my advisor, Luis Tenorio seemed to be a pragmatist: whatever method works for this application is fine with me! Mention his chapter with Philip Stark on foundations?
+%
+%Finished, got a job at CU. It wasn't clear what my niche would be. I was mainly hired to teach calculus and linear algebra. One of the first things that I did was propose a course in the philosophy of statistics. CU applied math is very supportive of faculty teaching new coursework. This course has evolved a lot over the last seven years!
+%
+%Sat in on philosophy of science with Carol Cleland (thanks Carol!). Engaged more with Deborah Mayo.
+%
+%In 2018, I started writing the first chapter of this book. I distinctly remember working on parts of it at the JSM in Vancouver. I had my first coffee a few months earlier that year, and decided that I'd have another. My student, Gregory Benton suggested a cold brew at a fancy Vancouver coffee shop. I wrote vigorously that day, and was up half the night!
+%
+%In 2019, I was accepted into summer seminar in philosophy of statistics, run by Deborah Mayo. I learned to appreciate the virtues of frequentist inference, and the work Mayo had done to strengthen its intellectual foundations. I met many wonderful people at this seminar, including Georgi Gardiner, ...
+%
+%Alison...helped shape my ideas, think on my feet. Alison asks fantastic questions!
+%
+%
+%\section{How I used AI in this book}
+%The majority of this book was written before AI became widely available (and before I ever used it)
+%for citations
+%as a conversation partner (there aren't many others in my world/department that converse on these topics! On a few occasions in Chapter 4, I shared my argument with ChatGPT and asked for feedback. As a sanity check. Once or twice I took that feedback into account. I can make these conversations public, of give an example?
+%once or twice as an example generator
+%proofreading/editing?
+
+%The audience of this book will largely come from two groups: philosophers that wish to know more about statistics (and how their discipline contributes to issues in statistics), and statisticians who wish to know something more about philosophical issues in their discipline. Consequently, this chapter provides an introduction to each discipline to ``bring everyone up to speed".
+%
+
+%Our journey into the philosophy of statistics begins as all journeys into the philosophy of statistics begin: with the $20^{th}$ continental philosopher Martin Heidegger. HERMENEUTIC CIRCLE...ENTRY POINT INTO PHILSTAT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Give credit where credit is due. %
+% Say thanks!                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{Acknowledgements}
+
+%\begin{itemize}
+%remember to thank Greg Benton!
+%This project would not have been possible without Ian Van Buskirk. Ian and I have spent countless hours discussing ideas and arguments, mostly while eating bagels in Boulder. Our conversations---in the field of philosophy of statistics, but also in other domains---have helped me discover new ideas and reshape my thinking on old ones. ...
+
+%Georgi Gardiner
+%Deborah Mayo
+%\item A special word of thanks goes to Professor Don Knuth\footnote{\url{http://www-cs-faculty.stanford.edu/~uno/}} (for \TeX{}) and Leslie Lamport\footnote{\url{http://www.lamport.org/}} (for \LaTeX{}).
+%\item I'll also like to thank Gummi\footnote{\url{http://gummi.midnightcoding.org/}} developers and LaTeXila\footnote{\url{http://projects.gnome.org/latexila/}} development team for their awesome \LaTeX{} editors.
+%\item I'm deeply indebted my parents, colleagues and friends for their support and encouragement.
+%\end{itemize}
+%\mbox{}\\
+%%\mbox{}\\
+%\noindent Amber Jain \\
+%\noindent \url{http://amberj.devio.us/}
