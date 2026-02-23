@@ -10,7 +10,7 @@ book:
     - index.qmd
     - ch1.qmd
     - ch2.qmd
-  cover-image: Art/BookCoverFull.png
+  cover-image: BookCoverFull.png
 
 bibliography: PoS-Bibliography.bib
 csl: csl/apa.csl
