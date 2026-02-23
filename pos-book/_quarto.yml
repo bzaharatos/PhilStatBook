@@ -10,20 +10,21 @@ book:
     - index.qmd
     - ch1.qmd
     - ch2.qmd
-  cover-image: BookCoverFull.png
+  cover-image: Art/BookCoverFull.png
 
 bibliography: PoS-Bibliography.bib
 csl: csl/apa.csl
 
 format:
   html:
-    css: styles.css
-    grid:
-      margin-width: 350px
-    reference-location: margin
-    citation-location: margin
-  pdf:
-    pdf-engine: lualatex
+    toc: true
+   # css: styles.css
+   # grid:
+   #   margin-width: 350px
+   # reference-location: margin
+   # citation-location: margin
+  #pdf:
+   # pdf-engine: lualatex
 
 crossref:
   chapters: true
