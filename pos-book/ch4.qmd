@@ -1,0 +1,83 @@
+# The frequentist statistical paradigm {#sec-frequentist}
+
+> Should probability enter \[statistics\] to capture degrees of belief about claims? To measure variability? Or **to ensure we won't reach mistaken interpretations of data too often in the long run of experience**? Modern statistical methods grew out of attempts to systematize doing all of these.
+
+::: flushright
+--- Deborah Mayo, *Statistical Inference as Severe Testing*
+:::
+
+> Let me ask you something. If the rule you followed brought you to this, of what use was the rule?
+
+::: flushright
+--- Anton Chigurh, *No Country for Old Men*
+:::
+
+In the previous chapter, we saw that there are many different ways to interpret probability. Some of those ways take probability to be describing some objective feature of the world, for example, relative frequencies that arise in repeated measurements. Others take probability to be describing something epistemic, for example, partial belief or incomplete information. These different interpretations of probability have given rise to different ways of producing statistical inferences. Frequentist statisticians take the so-called objective approach, assigning probabilities only to relative frequencies that arise over repeated measurements and repeated sampling. They use those probabilities to produce inferences to hypotheses or theories that may have given rise to the data. In this chapter, we'll study the philosophical foundations and practical methods of the frequentist statistical inference paradigm. First, we'll consider the formal construct--- a *statistical model*---that provides the basis from which probability statements are made. Then, we'll study the foundational tools of frequentist inference---including hypothesis testing, point estimation, and interval estimation---with special attention to philosophical justifications (or lack thereof).
+
+## Statistical models {#sec:models}
+
+Consider the following hypothesis about reading trends in America:
+
+> $H$: At least ten precent of Americans have read *The Brothers Karamazov* (*BK).*
+
+As with all statistical hypotheses, $H$ refers to a *population level parameter*---in this case, the proportion of Americans who have read BK: $$
+p = \frac{\# \text{ individuals in the population who have read {\it BK}}}{\# \text{ number of individuals in the population}}.
+$$\
+$H$ is difficult to confirm or falsify. Part of the difficulty lies in the fact that the population in question---all Americans---is very large.[^1]. It is not practical to observe all of the relevant information at the population level. Instead, we can gather data relevant to $H$ in a *sample*---or subset of the population. There are many different ways that a sample can be gathered from a given population. A *data generating process* *(DGP)* is a description of the sampling process that gives rise to the data. Consider the following DGP related to hypothesis $H$:
+
+> DGP$_H$: Randomly sample $n$ Americans and record whether they have ($1$) or have not ($0$) read *The Brothers Karamazov* (*BK*).
+
+A key feature of this DGP is the notion of a *random sample*. Randomness is notoriously difficult to define with precision [@eagle2010chance]. For our purposes, we define a *random sample* as a sample such that each individual---in this case, each American---has the same chance of being included.[^2] DGPs give way to *actual* or *observed* data. For example, imagine a random sample of size $n = 15$ arising from DGP$_H$: $$
+\mathbf{x} = (0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0).
+$$ Intuitively, there is information in $\mathbf{x}$ relevant to $p$, and thus, $H$. Generally, sample information relevant to a parameter or hypothesis can be summarized through a functions of the data, called a *statistics*. In this case, the relevant statistic is the proportion of individuals in the sample that have read *BK*: $$
+\widehat p = \frac{\# \text{ of individuals in the sample who have read {\it BK}} }{n}.
+$$ By convention, in statistics, when we have a sample quantity that corresponds to a population level quantity, we use the same notation, but add a "hat" on top.
+
+For the data $\mathbf x$ above, $\widehat p = 2/15$. $\widehat p$ does not precisely answer questions related to $p$ and $H$; it contains information from the sample only. It's easy to see how $p$ and $\widehat p$ might be different. Imagine that researchers had gathered a *different* random sample of size $n$, say, $\mathbf{x'} = (x'_1,...,x'_n)$. Using $\mathbf{x'}$, the sample proportion, $\widehat p'$ would likely be different, based on the fact that $\mathbf{x'}$ would (very likely) include different individuals with different reading habits. It is likely that both $\widehat p$ and $\widehat{p'}$ would be different from $p$. How different? A *statistical model* can help us answer this and related questions.
+
+A statistical model is a set of formal assumptions about the DGP that gives rise to observed data. Specifically, a statistical model makes the assumption that actual data $\mathbf{x} = (x_1,...,x_n)$ are *realizations* of a stochastic (probabilistic) process $\mathbf{X} = (X_1,...,X_n)$. $\mathbf{X}$ is chosen to encode information from the DGP (e.g., DGP$_H$), with a connection to the theory or hypothesis of interest (e.g., $p$, $H$). The assumption that actual data, $\mathbf{x}$, come from a stochastic process, $\mathbf{X}$, is often justified in terms of repeated sampling or measurement error. *If* we had observed the same phenomena (e.g., sampling process, experiment, physical process) again under sufficiently similar conditions, we would have observed different values, say, $\mathbf{x'} = (x'_1,...,x'_n)$. The statistical model quantifies how likely all of the possible datasets are under various hypotheses. For example, *possible data* $$
+\mathbf{x'} = (1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1),
+$$ with $\widehat{p'} = 9/15$, would be relatively *likely* under the hypothesis that $p = 0.7$; on the other hand, the actual data $\mathbf x$ (with $\widehat{p} = 2/15$) would be relatively unlikely under that hypothesis. For frequentist statisticians, these probabilities---probabilities assigned to various actual and hypothetical datasets---are relevant to what we ought to infer about parameters and hypotheses. Crucially, these probabilities are the *only* relevant ones for inferences about parameters and hypotheses. Probability theory enters the frequentist statistical model to quantify and subsequently test expectations we have about which data sets would would not arise under various hypotheses.[^3]
+
+At this point, we note that statistical models, as frequentists define them, are not capable of the kind of probabilistic inference demanded under *probabilism*. Recall from @sec-context that probabilism is the philosophical view that all inferences from data to hypotheses must be encoded as probability values assigned to hypotheses, given the available data. Under the frequentist formulation of a statistical model, such inferences are not possible, because the model is *by design* incapable of assigning probabilities to hypotheses. Instead, hypotheses are encoded as statistical model *parameters*, which are assumed to be non-random features that govern probability assignments.
+
+In the simplest cases, the DGP produces independent and identically distributed (iid) data. Informally, for $i=1,...,n$, $j = 1,...,n$:
+
+$X_i$ is independent from $X_j$ if the occurrence of $X_i$ does not influence the probability of occurrence of $X_j$, for all $i,j = 1,...,n$, $i \ne j$.
+
+$X_1,...,X_n$ are assumed to have the same probability distribution, i.e., the same "shape" (e.g., normal, binomial), center, scale, etc. With respect to DGP$_H$, if we assume that (i) no individual influences any other with respect to the reading *BK*, and that (id) the probability, $p$, that any randomly selected person in the population has read *BK* is the same for each person, then DGP$_H$ can be modeled by $\mathbf{X} = (X_1,...,X_n)$, where each $X_i$ has a Bernoulli distribution.[^4] Thus, by definition, $X_i$ is equal to either $1$ with probability $p$, or $0$ with probability $1-p$ and has the following probability distribution function (pdf): $$
+\begin{aligned}
+f(x_i; p) = p^{x_i}(1-p)^{1-x_i}, \,\,\, x \in \{0,1\}.
+\end{aligned}
+$$ The pdf $f(x_i; p)$ provides an answer to the question: *under the assumption of a specific value of $p$, what is the probability that the random variable $X_i$ is equal to some specific value $x_i$ (where $x_i = 0$ or $x_i = 1$)?* Under the iid assumptions, the joint pdf associated with the process is the product of the pdfs for each $X_i$:[^5] $$
+f(\mathbf{x}; p) = \prod_{i=1}^n f(x_i; p) = p^{\sum_{i=1}^n x_i}(1-p)^{n - \sum_{i=1}^n x_i}, \,\,\, x \in \{0,1\}.
+$$ The joint distribution $f(\mathbf{x}; p)$ answers questions like: *what is the probability of observing $\mathbf{x}$?* A statistical model is comprised of a stochastic process, $\mathbf X$, along with the family of pdfs, $f(\mathbf x; p)$: $$
+\begin{align}
+
+\mathcal{M}_{p}(\mathbf{x}) = \{\, \left(\, \mathbf{X}, \, f(\mathbf{x}; p) \, \right) :  p \in (0,1) , \, \, x_i \in \{0,1\} \}.
+\end{align}
+$$ {#eq-BernModel} By a *family* of probability distribution functions, we mean the collection of $f(\mathbf{x}; p)$ for all possible values of $p \in (0,1)$. Since we do not know which value of $p$ generated the observed data $\mathbf x$, the statistical model encodes the family of distributions as the set of all possible explanations of the data. Intuitively, some distributions in this family are much more plausible than others as explanations for the actual data; for DGP$_H$, the "sub-family" of distributions singled out by $p \in (0.9,1)$ are implausible as explanations for the actual data $\mathbf{x}$.
+
+### Frequentist probability and frequentist statistics
+
+It is worth emphasizing again that the statistical model described above uses probability theory in one (and only one) way: to model the process that gives rise to observed data. Possible *samples* (i.e., data) that arise from the DGP are modeled as events in a probabilistic process, and are thus assigned probabilities under an assumed parameter value or hypothesis. Statistical models in the frequentist statistical paradigm do *not* assign probabilities to parameters (e.g., $p$ in the example above), functions of parameters (e.g., $\text{Var}(X_i) = p(1-p)$), or hypotheses (e.g., $H$). In summary, $\mathbf X = (X_1,...,X_n)$ is probabilistic but $p$ and $H$ are not; instead, they are fixed constants---in the case of $p$---or descriptions of fixed features of the world---in the case of $H$.
+
+Frequentists adopt this use of probability largely on philosophical grounds, both endorsing the objective approach of tethering probability to relative frequencies that are, in theory at least, observable; and rejecting subjective probability as philosophically unsuitable. Frequentist statistician Ronald Fisher argued that "probability is a ratio of frequencies, and about the frequencies of such \[hypotheses\] we can know nothing whatever" @Fisher1922. Similarly, economist, philosopher, and frequentist statistician Aris Spanos explicitly connects statistical models with the frequentist interpretation of probability, and rejects the subjective interpretation of probability as unscientific:
+
+> a statistical model is built upon the systematic information contained in the observed data in an attempt to provide an appropriate description of the stochastic mechanism that gave rise to the data. The stance that observed data $\mathbf x=(x_1, ..., x_n)$ contain systematic statistical information in the form of chance regularity patterns, "stochasticity" (randomness), is a feature of real-world phenomena and exists independently of one's beliefs; its appropriateness can be tested against the data. Moreover, the frequentist interpretation of probability provides a way to relate these regularities to abstract statistical models in a manner that renders the probabilistic assumptions of the model testable vis-à-vis data $\mathbf x$. In addition, learning from data about observable stochastic phenomena cannot be solely in the mind of a particular individual, having to do with revising an individual's degrees of belief represented by a prior and a posterior distribution. Scientific knowledge needs to be testable and independent of one's beliefs [@Spanos2019].
+
+We see in Spanos a commitment to objectivity and testability: statistics is about using empirical information to test hypotheses. We now turn our attention the ways in which frequentists achieve these goals in practice, by studying some of the core tools used in frequentist statistical inference: hypothesis testing, maximum likelihood estimation, and confidence interval estimation.
+
+> **Get the full book:** [Buy *Patterns from Static*](https://brianzaharatos.com/book)
+
+[^1]: And, more broadly, in many statistical problems, populations are, at least in theory, infinite. When testing the theory "All ravens are black", we may be interesting in learning about all *existing* ravens, a finite set. But we also may be interested in whether this property is true of any raven, as a general law, and not just the finite number that actually do exist.
+
+[^2]: For now, we'll put aside the question of how (if at all) one might actually achieve a truly random sample!
+
+[^3]: @Howson2005 provide a justification for this assumption in the context of measurement error:
+
+    > The assumption of\...\[stochasticity\] is more or less realistic in many cases, for instance, where an instrument is used to measure some physical quantity. The instrument would, as a rule, deliver a spread of results if used repeatedly under similar conditions, and experience shows that this variability, or error distribution, often approximates a normal curve.
+
+[^4]: Strictly speaking, these assumptions are not realistic. Friends influence each other on what they read, rendering independence unrealistic. And some individuals are much more likely to read Russian literature books than others, rendering identically distributed unrealistic. The implausibility of these assumptions means that an iid statistical model would produce less-than-optimal inferences. An inference is only as good as the model used to produce them! There are some more advanced modeling assumptions that could correct these assumptions. For example, we could control for friend groups, books clubs, and types of readers.
+
+[^5]: The joint distribution is greatly simplified as the product of the individual (marginal) distributions because each of the random variables $X_i$ are independent from one another.

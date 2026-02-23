@@ -1,0 +1,15 @@
+# The Bayesian statistical paradigm {#sec-Bayesian}
+
+> Should probability enter \@sec-frequentist, we saw that frequentist methods were developed, in part, to avoid placing probability distributions over the parameters---or hypotheses about the parameters---that arise as part of a statistical model. Their argument goes something like this:
+
+1.  Assigning probabilities (other than zero or one) to fixed features of the world is a category mistake; either the feature has a certain property or it does not, and so there is nothing probabilistic about them.
+
+2.  Model parameters, and the statistical hypotheses that refer to them, are fixed features of the world.
+
+3.  Therefore, probabilities should not be assigned to model parameters or the hypotheses that refer to them.
+
+Convinced by this argument, frequentist statisticians develop inference methods that use data to narrow down the set of possible hypotheses [@Romeijn2014]. Frequentist hypothesis testing, for example, specifies a statistical model---which includes a joint probability distribution over random variables that model data---and then uses the probability assignments over the data to narrow down the parameter space of the model.
+
+A hidden premise in the argument above is that *probability assignments model **aleatoric** randomness and not **epistemic** randomness*. That premise is implicit in P1, above. If it were permissible to use probability to model epistemic uncertainty, then it *would* be possible to assign probabilities to fixed but unknown features of the world. Those probability assignments would then refer to an agent's epistemic state, and not anything inherent in the world. Most Bayesian inference methods do exactly this; that is, they broaden the scope and interpretation of probability theory to allow for probability to model an epistemic states. As we saw in chapter @sec-probability, the epistemic or subjective interpretation of probability is at least a plausible interpretation, often justified by the use of Dutch book arguments. But is it enough to support an entire statistical inference framework? That is what we'll explore in this chapter!
+
+> **Get the full book:** [Buy *Patterns from Static*](https://brianzaharatos.com/book)

@@ -1,0 +1,31 @@
+# Statistics and Causation {#sec-causation}
+
+> We don't want to know if countries with higher minimum wages have less poverty, we want to know if raising the minimum wage reduces poverty. We don't want to know if people who take a popular common-cold-shortening medicine get better, we want to know if the medicine made them get better more quickly. We don't want to know if the central bank cutting interest rates was shortly followed by a recession, we want to know if the interest rate cut caused the recession.
+
+::: flushright
+--- Nick Huntington-Klein, *The Effect*
+:::
+
+Consider the following set of research questions:
+
+Does low minimum wage cause poverty?
+
+Does a high carbohydrate diet cause an increase body weight?
+
+What is the effect of race on police use of force?
+
+Are ice cream sales associated with drowning deaths?
+
+Is respiratory disease linked to bone disease?
+
+Does the mRNA vaccine prevent symptomatic coronavirus disease (COVID-19)?
+
+Does hormone replacement therapy contributes to longer life in adult females?
+
+Some of these research questions suggest that one event or variable might *influence* or *cause* another. For example, in asking whether a high carbohydrate diet causes an increase in body weight, we are asking whether carbohydrate intake directly changes body weight. If we change the former, do we see a change in the latter? If instead of a high carbohydrate diet, one ate a *low* carbohydrate diet, would one observe a different body weight? Does body weight respond to diet type? Causal research questions use language that suggests that an output variable "listens" and "responds" to different values of an input variable; such questions often include phrases like "$X$ causes $Y$"; "$X$ reduces $Y$"; "$X$ affects $Y$"; or "$X$ changes $Y$" [@pearl_mackenzie_2018].
+
+Other questions suggest that two things are merely associated, but may not have a causal relationship. Such associations, even if not causal, may still be useful for predictive purposes. For example, ice cream sales and drowning deaths may well be associated, but it is not the case that ice cream sales *cause* drowning deaths; instead, in this case, both are caused by additional variables, like the air temperature or season. Nevertheless, it may be true that ice cream sales can reliably predict drowning deaths. Associative research questions use language that suggests that an output variable varies in conjunction with an input variable; such questions often include phrases like "$X$ is associated with $Y$"; "$X$ is correlated with $Y$"; "$X$ and $Y$ are related"; or "$X$ predicts $Y$" [@pearl_mackenzie_2018].
+
+Sometimes, research questions are posed as causal---e.g., they use causal language---but the tools used to attempt to answer them are, at best, associational or predictive. What assumptions must one make, and what kinds of statistical tools can one use, to answer causal research questions? What is a "cause", anyway? What sorts of ethical implications might causal statistical models have in society? These are the kinds of questions that we will consider in this chapter. After further differentiating causal and predictive modeling in section [\[sec:PandE\]](#sec:PandE){reference-type="ref" reference="sec:PandE"}), we will turn to metaphysical questions related to the nature and definition of causality in section [\[sec:PhilOfCause\]](#sec:PhilOfCause){reference-type="ref" reference="sec:PhilOfCause"}; epistemological and statistical questions related to causality in section [\[sec:StatandCause\]](#sec:StatandCause){reference-type="ref" reference="sec:StatandCause"}; and ethical questions related to causal inference in section [\[sec:ethics\]](#sec:ethics){reference-type="ref" reference="sec:ethics"}.
+
+> **Get the full book:** [Buy *Patterns from Static*](https://brianzaharatos.com/book)

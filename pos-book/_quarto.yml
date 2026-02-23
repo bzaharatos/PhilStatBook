@@ -11,6 +11,9 @@ book:
     - ch1.qmd
     - ch2.qmd
     - ch3.qmd
+    - ch4.qmd
+    - ch5.qmd
+    - ch6.qmd
   cover-image: figures/BookCoverFull-low-res.png
 
 bibliography: PoS-Bibliography.bib
